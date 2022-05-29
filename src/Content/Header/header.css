@@ -1,0 +1,77 @@
+@import "../../App.css";
+
+header {
+  position: relative;
+  margin-top: 24px;
+  padding: 1rem 3rem;
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header___title {
+  margin-left: 3rem;
+  width: 35vw;
+}
+
+.header___title span {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+.header___title span:hover {
+  color: var(--hoverColor1);
+}
+
+.header___title p {
+  line-height: 1.8;
+}
+
+.header___title-btn {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.header___title-btn a:last-child {
+  margin-left: 24px;
+}
+
+.header__title--socialLink {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.header__title--socialLink p,
+.header__title--socialLink i,
+.header__title--socialLink hr {
+  margin-right: 18px;
+}
+
+.header__title--socialLink hr {
+  width: 2rem;
+}
+
+.header__title--socialLink i {
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+.header__title--socialLink i:hover {
+  color: var(--hoverColor1);
+}
+
+header > .header___imgSection {
+  height: 100%;
+}
+
+.header___imgSection > img {
+  height: 100%;
+}

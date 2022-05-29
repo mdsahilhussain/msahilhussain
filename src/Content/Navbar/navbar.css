@@ -1,0 +1,44 @@
+@import "../../App.css";
+
+nav {
+  padding: 1rem 3rem;
+}
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar___img {
+  height: fit-content;
+  background: transparent;
+}
+
+.navbar___img img {
+  height: 100px;
+}
+
+.navbar___links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar___links a {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-right: 18px;
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar___links a:hover,
+.navbar___links a:active {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--hoverColor1);
+}
+
+.navbar___links a:last-child {
+  font-size: 13px;
+  margin-left: 16px;
+}

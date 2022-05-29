@@ -1,0 +1,93 @@
+@import "../../App.css";
+
+.project {
+  padding: 5rem 3rem;
+  height: 80vh;
+  margin-top: 24px;
+}
+
+.project___heading--line1 {
+  position: relative;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  color: var(--hoverColor1);
+}
+
+.project___heading--line1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  content: "";
+  background: var(--hoverColor1);
+  color: var(--hoverColor1);
+  z-index: 2;
+}
+
+.project___heading--line2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project___heading--line2::before {
+  position: absolute;
+  bottom: 15%;
+  right: 64%;
+  width: 8rem;
+  height: 2px;
+  content: "";
+  background: var(--text-color);
+  color: var(--text-color);
+  z-index: 2;
+}
+
+.project___heading--line2 span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.project___heading--line2 span:hover {
+  color: var(--hoverColor1);
+}
+
+.project___card {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.project___card--contant {
+  position: relative;
+  height: 70vh;
+  border-radius: 10px;
+  background-color: var(--hoverColor1);
+}
+
+.project___card--contant:nth-child(1) {
+  background-color: var(--hoverColor1);
+}
+.project___card--contant:nth-child(2) {
+  background-color: var(--primary-color);
+}
+.project___card--contant:nth-child(3) {
+  background-color: var(--hoverColor3);
+}
+
+.project___card--contant___body {
+  position: absolute;
+  padding: 4rem 2rem;
+  bottom: 0;
+}
+
+.project___card--contant___body img {
+  height: 50px;
+}
+
+.project___card--contant___body i {
+  vertical-align: middle;
+}

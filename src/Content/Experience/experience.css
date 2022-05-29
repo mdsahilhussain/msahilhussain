@@ -1,0 +1,97 @@
+@import "../../App.css";
+
+.experience {
+  padding: 5rem 3rem;
+  margin-top: 24px;
+}
+
+.experience___style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience___style___headlineSection {
+  position: relative;
+  width: 40%;
+}
+
+.experience___style___headlineSection h1 {
+  position: relative;
+}
+.experience___style___headlineSection hr {
+  position: absolute;
+  width: 8rem;
+  left: 77%;
+  bottom: 15%;
+}
+.experience___style___headlineSection--imgae1 {
+  right: 20%;
+  bottom: 0;
+  position: absolute;
+  height: 85%;
+}
+
+.experience___style___headlineSection--imgae2 {
+  padding: 1rem;
+  bottom: 0;
+  right: 10%;
+  position: absolute;
+  height: 180px;
+  border-radius: 50%;
+}
+
+
+.experience___style___headlineSection--imgae2 > img {
+  height: 100%;
+}
+
+.experience___style___workingDetail {
+  width: 60%;
+  background-color: var(--cardColor);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.exerience___style__workingDetail--detail {
+  position: relative;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.exerience___style__workingDetail--detail::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background: var(--primary-color);
+  color: var(--primary-color);
+  z-index: 2;
+}
+
+.exerience___style__workingDetail--detail___icon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.exerience___style__workingDetail--detail h3 {
+  margin: 2px 0 10px 0;
+}
+
+.exerience___style__workingDetail--detail ul {
+  margin-top: 18px;
+  list-style-type: disc;
+  color: var(--text-color);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  opacity: 75%;
+  list-style-position: inside;
+  line-height: 1.5;
+  font-size: 1rem;
+}

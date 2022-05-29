@@ -1,0 +1,67 @@
+@import "../../App.css";
+
+.footer {
+  padding: 5rem 3rem 1rem 3rem;
+  background-color: var(--cardColor);
+ 
+}
+
+.footer--boday{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer___importantLinks {
+  display: flex;
+  align-items: center;
+}
+
+.footer___importantLinks ul:first-child {
+  margin-right: 50px;
+}
+
+.footer___importantLinks li {
+  margin-bottom: 18px;
+}
+
+.footer___importantLinks li:last-child {
+  margin-bottom: 0px;
+}
+
+.footer___soicalLinks ul {
+  margin-bottom: 18px;
+}
+
+.footer___soicalLinks ul:last-child {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.footer___soicalLinks a{
+    margin-right: 18px;
+}
+
+.socialIcon i{
+    cursor: pointer;
+    font-size: 34px;
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+}
+
+.socialIcon i:hover{
+    color: var(--hoverColor1);
+}
+
+.footer__lower{
+    padding: 2rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+.footer__lower p{
+    text-transform: lowercase;
+    opacity: 100%;
+    padding-top: 1rem;
+    border-top: 2px solid var(--bg-color);
+}
