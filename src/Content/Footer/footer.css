@@ -45,7 +45,7 @@
 
 .socialIcon i{
     cursor: pointer;
-    font-size: 34px;
+    font-size: 32px;
     color: var(--primary-color);
     transition: all 0.3s linear;
 }

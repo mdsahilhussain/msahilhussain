@@ -7,12 +7,6 @@ import "./navbar.css";
 import Logo from "../../Assets/logoImage.svg";
 
 export default class Navbar extends Component {
-  // navLinkStyle = (isActive) => {
-  //   return {
-  //     fontSize: isActive ? "32px" : "18px",
-  //     color: isActive ? "ff4655" : "f2f2f2",
-  //   };
-  // };
   render() {
     return (
       <nav>
@@ -23,16 +17,28 @@ export default class Navbar extends Component {
             </NavLink>
           </div>
           <div className="navbar___links">
-            <NavLink to={"#about"} style={this.navLinkStyle}>
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               About me
             </NavLink>
-            <NavLink to={"#experience"} style={this.navLinkStyle}>
+            <NavLink
+              to={"/#experience"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               Experience
             </NavLink>
-            <NavLink to={"#certificate"} style={this.navLinkStyle}>
+            <NavLink
+              to={"/certificate"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               Certificate
             </NavLink>
-            <NavLink to={"#project"} style={this.navLinkStyle}>
+            <NavLink
+              to={"/project"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               Project
             </NavLink>
             <NavLink

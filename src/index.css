@@ -3,7 +3,7 @@
 /* ================== About Me Component ====================== */
 .about {
   padding: 4rem 3rem;
-  height: 90vh;
+  height: fit-content;
   margin-top: 24px;
 }
 
@@ -39,8 +39,8 @@
   font-size: 18px;
   font-weight: 300;
   color: var(--primary-color);
-  font-family: l;
   font-family: "Rubik", sans-serif;
+  transition: all 0.3s linear;
 }
 
 .about___heading--links a {
@@ -51,6 +51,12 @@
   margin-right: 0px;
 }
 
+.about___heading--links a:hover {
+  color: var(--hoverColor1);
+}
+a.aboutactive {
+  color: var(--hoverColor1);
+}
 .about___contant {
   display: flex;
   align-items: center;
@@ -61,5 +67,8 @@
   width: 30%;
 }
 .about___contant--components {
+  padding: 3rem;
   width: 70%;
+  background-color: transparent;
+  border-radius: 15px;
 }

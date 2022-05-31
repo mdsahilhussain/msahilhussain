@@ -1,6 +1,6 @@
 export const peopleDetails = [
   {
-    imageURL: "1ZKNjKEcwHdqSv2DrZuKxDNqYNsxKgy46",
+    imageURL: "1cBf3LAseIHRWVwvglJMfr-TxZ-bFD9HS",
     userName: "Harsh Thakur",
     userProf: "Inter at PSRLM",
     despc:
@@ -18,7 +18,7 @@ export const peopleDetails = [
   },
 
   {
-    imageURL: "1ZKNjKEcwHdqSv2DrZuKxDNqYNsxKgy46",
+    imageURL: "1cBf3LAseIHRWVwvglJMfr-TxZ-bFD9HS",
     userName: "Harsh Thakur",
     userProf: "Inter at PSRLM",
     despc:
@@ -36,7 +36,7 @@ export const peopleDetails = [
   },
 
   {
-    imageURL: "1ZKNjKEcwHdqSv2DrZuKxDNqYNsxKgy46",
+    imageURL: "1cBf3LAseIHRWVwvglJMfr-TxZ-bFD9HS",
     userName: "Harsh Thakur",
     userProf: "Inter at PSRLM",
     despc:

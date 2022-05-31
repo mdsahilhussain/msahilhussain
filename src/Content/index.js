@@ -6,4 +6,6 @@ export { default as Project } from "./Project/Project";
 export { default as Testimonial } from "./Testimonial/Testimonial";
 export { default as Contact } from "./Contact/Contact";
 export { default as Introdution } from "./Introdution/Introdution";
+export { default as Skills } from "./Skills/Skills";
+export { default as Education } from "./Education/Education";
 export { default as Footer } from "./Footer/Footer";

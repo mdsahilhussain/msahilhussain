@@ -31,13 +31,17 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar___links a:hover,
-.navbar___links a:active {
+.navbar___links a:hover{
   font-size: 32px;
   font-weight: 500;
   color: var(--hoverColor1);
 }
 
+a.active {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--hoverColor1);
+}
 .navbar___links a:last-child {
   font-size: 13px;
   margin-left: 16px;

@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Route, Routes } from "react-router-dom";
 
-import { Introdution } from "../Content";
+import { Education, Introdution, Skills } from "../Content";
 
 function About() {
   return (
@@ -12,9 +12,24 @@ function About() {
           <h1>about me</h1>
         </div>
         <div className="about___heading--links">
-          <NavLink to={"/"}>Introdution</NavLink>
-          <NavLink to={"/"}>Skills</NavLink>
-          <NavLink to={"/"}>Qualification</NavLink>
+          <NavLink
+            to={"introdution"}
+            className={({ isActive }) => (isActive ? "aboutactive" : "")}
+          >
+            Introdution
+          </NavLink>
+          <NavLink
+            to={"skills"}
+            className={({ isActive }) => (isActive ? "aboutactive" : "")}
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            to={"qualification"}
+            className={({ isActive }) => (isActive ? "aboutactive" : "")}
+          >
+            Qualification
+          </NavLink>
         </div>
       </div>
       <div className="about___contant">
@@ -22,7 +37,11 @@ function About() {
           <video />
         </div>
         <div className="about___contant--components">
-            <Introdution/>
+        <Routes>
+            <Route path={"introdution"} element={<Introdution />} />
+            <Route path={"skills"} element={<Skills />} />
+            <Route path={"qualification"} element={<Education />} />
+          </Routes>
         </div>
       </div>
     </div>

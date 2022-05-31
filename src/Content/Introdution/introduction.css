@@ -1,0 +1,39 @@
+@import "../../App.css";
+
+.introduction {
+  width: 90%;
+}
+
+.introduction h3 {
+  margin: 5px 0 -4px 0;
+}
+
+.introduction p {
+  margin: 25px 0;
+  line-height: 2;
+}
+
+.introduction img {
+  width: 150px;
+  margin-bottom: -15px;
+}
+
+.introduction ul {
+  margin-top: 35px;
+  display: flex;
+  font-size: 34px;
+}
+
+.introduction a {
+  margin-right: 18px;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+.introduction a:last-child {
+  margin-right: 0px;
+}
+
+.introduction a:hover {
+  color: var(--hoverColor1);
+}
