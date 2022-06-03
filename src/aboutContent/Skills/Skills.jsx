@@ -14,6 +14,9 @@ export default class Skills extends Component {
       <div className="skills">
         <h3>My Specialty in</h3>
         <p>
+          {/* 
+          //TODO : Writeing Specialty description============================================
+          */}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
           pellentesque dui dui, phasellus vestibulum consequat odio sociis. Ac
           vel sed viverra ornare placerat vitae egestas ut sit. Feugiat metus

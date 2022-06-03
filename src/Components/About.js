@@ -1,9 +1,11 @@
-import React from "react";
-import { NavLink,Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
 
-import { Education, Introdution, Skills } from "../Content";
+import { Education, Introdution, Skills } from "../aboutContent";
 
 function About() {
+  const [peram, setPeram] = useState("about");
+
   return (
     <div className="about">
       <div className="about___heading">
@@ -34,10 +36,11 @@ function About() {
       </div>
       <div className="about___contant">
         <div className="about___contant--video">
+          {peram === "about" ? "" : ""}
           <video />
         </div>
         <div className="about___contant--components">
-        <Routes>
+          <Routes>
             <Route path={"introdution"} element={<Introdution />} />
             <Route path={"skills"} element={<Skills />} />
             <Route path={"qualification"} element={<Education />} />

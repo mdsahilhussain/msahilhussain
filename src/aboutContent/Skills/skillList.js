@@ -79,6 +79,10 @@ export const skillList = [
         skillScore: "80",
       },
       {
+        skill: "React Router dom",
+        skillScore: "80",
+      },
+      {
         skill: "Material UI",
         skillScore: "85",
       },
@@ -93,11 +97,11 @@ export const skillList = [
         toolScore: "90%",
       },
       {
-        tool: " git",
+        tool: "git",
         toolScore: "86%",
       },
       {
-        tool: " github",
+        tool: " git Lab",
         toolScore: "86%",
       },
       {

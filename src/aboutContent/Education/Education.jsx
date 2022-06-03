@@ -7,21 +7,21 @@ export default class Experience extends Component {
     {
       duration: "may, 2018 -  Present",
       companeyName: "Darbhanga College of Engineering, Darbhanga",
-      jobTitle: "bachelor in technology",
+      jobTitle: "graduation",
       aboutCompaney:
-        "I am pursuing my bachelor in technology Degree in Computer Secience and Engineering.",
+        "I am pursuing my Bachelor of Technology Degree in Computer Science and Engineering.",
       Roles: [
         {
-          role: "72.72% ^",
+          role: "with 72.72% ^",
         },
       ],
     },
     {
       duration: "may, 2016 -  march, 2018",
-      companeyName: "Let'sGrowMore, Prayagraj, Uttar Pradesh",
+      companeyName: "scottish public school, katihar",
       jobTitle: "intermediate",
       aboutCompaney:
-        "I have done my intermediate in physics, maths and chemistry stream.",
+        "I have done my intermediate in physics, maths, and chemistry stream.",
       Roles: [
         {
           role: "with 50%",
@@ -32,7 +32,8 @@ export default class Experience extends Component {
       duration: "march, 2006 -  march, 2016",
       companeyName: "Ramakrishna Mission Vidyamandir, Katihar",
       jobTitle: "matriculation in genral study",
-      aboutCompaney: "I have done my matriculation in genral study stream.",
+      aboutCompaney:
+        "I have done my matriculation in the general study stream.",
       Roles: [
         {
           role: " with 74.1%",

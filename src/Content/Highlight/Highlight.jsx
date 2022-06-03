@@ -24,19 +24,19 @@ export default class Highlight extends Component {
   detailLine = [
     {
       bodyLine:
-        "I will help you finging a solution and solve your problems, I use process design to create digital products. Besids that also help their companey.",
+        "I will help you find a solution and solve your problems, I use process design to create digital products. Besides that also help their company.",
     },
     {
       bodyLine:
-        "I use process design to create digital products. Beside that also help their companey.",
+        "I use process design to create digital products. Besides that also help their company.",
     },
     {
       bodyLine:
-        "I will help your to convert digital products to real web application to runing your companey on real world, Besids that also help their companey.",
+        "I will help you to convert digital products to a real web application to running your company on real-world, Besides that also help their company.",
     },
     {
       bodyLine:
-        "I use process web techology to create web application. Beside that also help their companey.",
+        "I use process web technology to create a web application. Besides that also help their company.",
     },
   ];
   render() {
@@ -71,7 +71,9 @@ export default class Highlight extends Component {
             </div>
           </div>
           <div className="highLight___detailSection--line">
-            <h1>What do I help ?<hr /> </h1> 
+            <h1>
+              What do I help ?<hr />{" "}
+            </h1>
             {this.detailLine.map((line) => {
               return <p key={line.id}>{line.bodyLine}</p>;
             })}

@@ -6,7 +6,8 @@ import "./index.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 
-import { Footer, Navbar, Introdution, Skills, Education } from "./Content";
+import { Footer, Navbar } from "./Content";
+import { Certfication, Portfolio } from "./PCD";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about/*" element={<About />} />
+        <Route path="/certificate" element={<Certfication />} />
+        <Route path="/project" element={<Portfolio />} />
       </Routes>
       <Footer />
     </Router>

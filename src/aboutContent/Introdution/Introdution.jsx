@@ -28,22 +28,22 @@ export default class Introdution extends Component {
         <h3>My self Md Sahil Hussain</h3>
         <h4>Front End Devloper & UI UX Devloper</h4>
         <p>
-          I am from katihar Bihar, I have done my 10th forrm Rama Krishana
-          Mission VidyaMandir, Katihar. Currently I am pursuing B.Tech Degree in
-          Computer Secience and Engineering form Darbhanga College of
-          Engineering Darbhanga. I am a Intermediaty web devloper and a
-          passionate UI and UX developer. Anlog with my degree I have completed
-          a front end developement and UI and UX design course on different
-          learning platfroms, as well as I have done project on it. I have a
+          I am from katihar Bihar, I have done my 10th form Rama Krishana
+          Mission VidyaMandir, Katihar. Currently, I am pursuing B.Tech Degree
+          in Computer Science and Engineering from Darbhanga College of
+          Engineering Darbhanga. I am an intermediate web developer and a
+          passionate UI and UX developer. Analog to my degree I have completed a
+          front-end development and UI and UX design course on different
+          learning platforms, as well as I have done a project on it. I have a
           keen interest in OOPS, OS, DSA, <br /> <br />
-          Thanks that all abut me self
+          Thanks for that all about meself
         </p>
         <img src={signaturImage} alt="" />
         <h4>M SAHIL HUSSAIN</h4>
         <ul>
           {this.social.map((item, index) => {
             return (
-              <a target="_blank" rel='noreferrer' href={item.url}  key={index}>
+              <a target="_blank" rel="noreferrer" href={item.url} key={index}>
                 <i className={item.icon}></i>
               </a>
             );

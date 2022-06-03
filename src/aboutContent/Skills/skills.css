@@ -11,19 +11,14 @@
 
 .skills___cardBox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .skills___cardBox___card {
-  padding: 1.5rem 2rem;
-  /* border: 1px solid var(--text-color); */
   width: 40%;
   margin-right: 18px;
   border-radius: 10px;
-}
-
-.skills___cardBox___card:hover {
 }
 
 .skills___cardBox___card p {
