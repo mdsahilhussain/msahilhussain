@@ -24,33 +24,31 @@
 .skills___cardBox___card p {
   margin: 12px 0;
   line-height: 1.5;
+  /* width: fit-content; */
 }
 
 .skills___cardBox___card:last-child {
   margin-right: 0px;
 }
-.skills___cardBox___card ul{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 1rem;
+.skills___cardBox___card ul {
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .skills___cardBox___card li {
-  color: var(--text-color);
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  list-style-position: inside;
-  opacity: 70%;
-  line-height: 1.5;
-  font-size: 1rem;
-  padding: 2px 5px;
-  background-color: brown;
-  border-radius: 50px;
+  width: fit-content;
+  height: 30px;
+  margin: 5px 5px;
 }
 
-.skills___cardBox___card h4 {
-  margin-top: 18px;
+.skills___cardBox___card li > img {
+  height: 100%;
 }
 
-.skills___cardBox___card h4 img{
- height: 28px;
+.skills___cardBox___card h5 {
+  margin: 15px 0px 5px 0;
+}
+
+.skills___cardBox___card h5 img {
+  height: 24px;
 }

@@ -5,44 +5,38 @@ export const skillList = [
     icon: "fa-solid fa-mobile",
     skillSet: [
       {
-        skill: "User Interface",
-        skillScore: "90",
+        skill: "1qnuiNpQ4QcgOtf1yloKo5JfbwkQZKYyO",
       },
       {
-        skill: "Prototyping",
-        skillScore: "95",
+        skill: "121aQZuqtF2pTFKmfdJjydkC_dG7XpaSN",
       },
       {
-        skill: "Wireframing",
-        skillScore: "85",
+        skill: "1YR5XD_UMoQkpemHQpq8sWlAsFf_7oR-y",
       },
 
       {
-        skill: "Mockups",
-        skillScore: "70",
+        skill: "1CIM84550OKafgp6D62yy2MW5j8Ngacsy",
       },
     ],
     toolSet: [
       {
-        tool: "Figma",
-        toolScore: "95",
+        tool: "19Zfi6qcY6KXf2uk0UIGuSA4vXnd6lFuS",
       },
       {
-        tool: "Abode XD",
-        toolScore: "80",
+        tool: "1CJktcOe7gK5EtyO69PgA4UQ_fuwQmdqQ",
       },
 
       {
-        tool: "Sketch",
-        toolScore: "70",
+        tool: "1zvqPjEReg7uQyl9MsWOAT6UyURX3sGyk",
       },
       {
-        tool: "Photoshop",
-        toolScore: "60",
+        tool: "1dnxe3BmVws0n0k9jcvsL4_2-yEPhITt6",
       },
       {
-        tool: "Lightroom",
-        toolScore: "80",
+        tool: "1pYtT3LbVSfycyEK3JJXdPHJqGOFoEI4Q",
+      },
+      {
+        tool: "1Zb015zDUMgT-hgXywmowiOt8CZX3KZAE",
       },
     ],
   },
@@ -52,65 +46,50 @@ export const skillList = [
     icon: "fa-solid fa-desktop",
     skillSet: [
       {
-        skill: "HTML5",
-        skillScore: "80",
+        skill: "1WHHpRZmWGypFqTWwEeR2BQrEfy73T-QY",
       },
       {
-        skill: "CSS3",
-        skillScore: "85",
+        skill: "1nr1oQ52Xq_8fTPGQIO5J15-J9yBoJkbJ",
       },
       {
-        skill: "React js",
-        skillScore: "90",
+        skill: "1FPt-6696OOvFOmNAx2V5qrDT0tvi-Pcm",
       },
 
       {
-        skill: "javaScript",
-        skillScore: "75",
+        skill: "12Q5rIXzEf2lw1EPfGKq6epJsz1mnkvmc",
       },
 
       {
-        skill: "Redux",
-        skillScore: "75",
-      },
-
-      {
-        skill: "React Hooks",
-        skillScore: "80",
+        skill: "1iG5CVA8x2sSnuMzR6FH5NgAKvGttp1R1",
       },
       {
-        skill: "React Router dom",
-        skillScore: "80",
+        skill: "1meI-4-JyBUs8mHL5N69voo5ikTlsj1zO",
       },
       {
-        skill: "Material UI",
-        skillScore: "85",
+        skill: "10-UT1-OkaEMAE8TUUidUXqrutjRDFOnW",
       },
       {
-        skill: "Tailwind CSS",
-        skillScore: "85",
+        skill: "1_KDZ1S0Y7fCmW3j2huT0UurFUEzGCCTT",
+      },
+      {
+        skill: "18ADqG1Dz1dJ7aJaxnqU4b8_yp1XHxXP5",
       },
     ],
     toolSet: [
       {
-        tool: "VS code",
-        toolScore: "90%",
+        tool: "1EszyQH3YL-GUyMU1nxA2_Xvejnffy7Er",
       },
       {
-        tool: "git",
-        toolScore: "86%",
+        tool: "1yl3yH1CwQDWZFz1zyD919V3bPsTRV4yF",
       },
       {
-        tool: " git Lab",
-        toolScore: "86%",
+        tool: "1yq8xeQz2vB_18HIoVFqaSpffRCLniK68",
       },
       {
-        tool: "CodePen",
-        toolScore: "75%",
+        tool: "1pAMXru7waz1JfKE1w9jPJ45SOM65D-u2",
       },
       {
-        tool: "CodeSandbox",
-        toolScore: "75%",
+        tool: "1-iTKcxDY2bNoS1IcLuLQqoj04hK9aIJc",
       },
     ],
   },

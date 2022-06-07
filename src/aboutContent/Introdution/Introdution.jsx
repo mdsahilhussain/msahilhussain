@@ -49,6 +49,24 @@ export default class Introdution extends Component {
             );
           })}
         </ul>
+        <ul className="introduction___numberFiger">
+          <li>
+            <h2>500+</h2>
+            <p>DSA problem solve</p>
+          </li>
+          <li>
+            <h2>500+</h2>
+            <p>DSA problem solve</p>
+          </li>
+          <li>
+            <h2>500+</h2>
+            <p>DSA problem solve</p>
+          </li>
+          <li>
+            <h2>500+</h2>
+            <p>DSA problem solve</p>
+          </li>
+        </ul>
       </div>
     );
   }

@@ -37,3 +37,24 @@
 .introduction a:hover {
   color: var(--hoverColor1);
 }
+
+.introduction___numberFiger li {
+  margin-right: 18px;
+}
+
+.introduction___numberFiger li h2 {
+  color: var(--hoverColor3);
+  transition: all 0.3s linear;
+}
+
+.introduction___numberFiger li h2:hover {
+  color: var(--hoverColor1);
+}
+
+.introduction___numberFiger li:last-child {
+  margin-right: 0px;
+}
+
+.introduction___numberFiger li p {
+  margin-top: -0.8rem;
+}

@@ -18,7 +18,7 @@ export default class Navbar extends Component {
           </div>
           <div className="navbar___links">
             <NavLink
-              to={"/about"}
+              to={"/about"} state={{params: "addVideo", subTitle:""}}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               About me
@@ -42,7 +42,6 @@ export default class Navbar extends Component {
               Project
             </NavLink>
             <NavLink
-              style={this.navLinkStyle}
               to={"#contact"}
               className="button_borders"
             >

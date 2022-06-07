@@ -27,28 +27,38 @@ export default class Skills extends Component {
           {list.map((item, index) => {
             return (
               <div className="skills___cardBox___card" key={index}>
-                <h3>
-                  <i className={item.icon}></i> {item.skillsName}
-                </h3>
-                <p>{item.desc} </p>
                 <h4>
-                  <img src={skillsIcon} alt="skillsIcon" /> Skills
+                  <i className={item.icon}></i> {item.skillsName}
                 </h4>
+                <p>{item.desc} </p>
+                <h5>
+                  <img src={skillsIcon} alt="skillsIcon" /> Skills
+                </h5>
                 <ul>
                   {item.skillSet.map((subItem, index) => {
                     return (
-                      <li>
-                        {subItem.skill} <span></span>
+                      <li key={index}>
+                        <img
+                          src={`https://drive.google.com/uc?export=view&id=${subItem.skill}`}
+                          alt={``}
+                        />
                       </li>
                     );
                   })}
                 </ul>
-                <h4>
+                <h5>
                   <img src={toolsIcon} alt="toolsIcon" /> Tools
-                </h4>
+                </h5>
                 <ul>
                   {item.toolSet.map((subItemII, index) => {
-                    return <li key={index}>{subItemII.tool}</li>;
+                    return (
+                      <li key={index}>
+                        <img
+                          src={`https://drive.google.com/uc?export=view&id=${subItemII.tool}`}
+                          alt={``}
+                        />
+                      </li>
+                    );
                   })}
                 </ul>
               </div>

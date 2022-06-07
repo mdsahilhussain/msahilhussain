@@ -15,6 +15,25 @@
   width: 40%;
 }
 
+.experience___style___headlineSection--line1 {
+  position: relative;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  color: var(--hoverColor1);
+}
+
+.experience___style___headlineSection--line1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  content: "";
+  background: var(--hoverColor1);
+  color: var(--hoverColor1);
+  z-index: 2;
+}
+
 .experience___style___headlineSection h1 {
   position: relative;
 }
@@ -39,7 +58,6 @@
   height: 180px;
   border-radius: 50%;
 }
-
 
 .experience___style___headlineSection--imgae2 > img {
   height: 100%;

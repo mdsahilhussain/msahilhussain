@@ -13,16 +13,19 @@ export default class Project extends Component {
       icon: mobileAppIcon,
       cardHeader: "Mobile App Design",
       link: "",
+      delay: "100",
     },
     {
       icon: webDesignIcon,
       cardHeader: "Web App Design",
       link: "",
+      delay: "200",
     },
     {
       icon: frontEndDevIcon,
       cardHeader: "Front End Development",
       link: "",
+      delay: "300",
     },
   ];
 
@@ -31,7 +34,12 @@ export default class Project extends Component {
       <div className="project">
         <div className="project___heading">
           <h4 className="project___heading--line1">Portfolio</h4>
-          <h1 className="project___heading--line2">
+          <h1
+            className="project___heading--line2"
+            data-aos="fade-up"
+            // data-aos-offset="200"
+            // data-aos-delay="50"
+          >
             My Latest Works{" "}
             <span>
               Explore More Works{" "}
@@ -42,7 +50,13 @@ export default class Project extends Component {
         <div className="project___card">
           {this.cardDetail.map((item, index) => {
             return (
-              <div className="project___card--contant" key={index}>
+              <div
+                className="project___card--contant"
+                key={index}
+                data-aos="fade-up"
+                // data-aos-offset="200"
+                data-aos-delay={item.delay}
+              >
                 <div className="project___card--contant___body">
                   <img src={item.icon} alt={JSON.stringify(item.icon)} />
                   <h3>{item.cardHeader}</h3>

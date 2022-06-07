@@ -1,4 +1,4 @@
-/* *================== Google fonts ====================== */
+/* ================== Google fonts ====================== */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 /* *================== Basic style ====================== */
@@ -73,7 +73,9 @@ ul {
   list-style: none;
   margin: 0;
 }
-
+br{
+  color: var(--hoverColor3);
+}
 a {
   text-decoration: none;
   color: unset;
@@ -206,8 +208,8 @@ a:hover {
   }
 }
 
-.slide-right{
-  -webkit-animation: slide-right 0.9s steps(2, end) 0.2s  infinite both;
+.slide-right {
+  -webkit-animation: slide-right 0.9s steps(2, end) 0.2s infinite both;
   animation: slide-right 0.9s steps(2, end) 0.2s infinite both;
 }
 
@@ -230,4 +232,45 @@ a:hover {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
   }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }

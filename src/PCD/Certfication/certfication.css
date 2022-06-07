@@ -1,0 +1,62 @@
+@import "../../App.css";
+
+.certification {
+  padding: 1rem 3rem;
+  height: 80vh;
+}
+
+.certification___body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.certification___body--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.certification___body--detail {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+.certification___body--detail__content {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  left: -15%;
+}
+
+.certification___body--detail__content h2 {
+  color: var(--primary-color);
+}
+
+.certification___body--detail__content hr {
+  margin-top: -5px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.certification___body--detail__content p {
+  color: var(--hoverColor1);
+  opacity: 100%;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.certification___body--image {
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+
+.certification___body--image > img {
+  height: 95%;
+  border-radius: 25px;
+  object-fit: fill;
+}

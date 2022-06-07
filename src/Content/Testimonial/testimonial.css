@@ -42,20 +42,26 @@
   background-color: transparent;
 }
 
-.testimonial___card--arrow {
-  float: right;
-  display: flex;
+.arrow {
+  position: absolute;
+  z-index: 99;
+  bottom: 20px;
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.testimonial___card--arrow i {
-  /* position: absolute;
-  right: 0; */
-  color: var(--primary-color);
-  margin-right: 18px;
-  font-size: 24px;
+.prev_arrow {
+  right: 140px;
 }
+
+.next_arrow {
+  right: 70px;
+}
+
 .testimonial___card--height {
   height: 60vh;
+  position: relative;
 }
 .testimonial___card--contant {
   padding: 2rem 4rem;
