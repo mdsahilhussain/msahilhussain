@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { NavLink, Route, Routes} from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 
 import { Education, Introdution, Skills } from "../aboutContent";
 
-import circleShapOne from '../Assets/circleShapOne.png'
-import circleShapTwo from '../Assets/circleShapTwo.png'
-import circleShapThree from '../Assets/circleShapThree.png'
-import svgShapOne from '../Assets/svgShapOne.png'
+import circleShapOne from "../Assets/circleShapOne.png";
+import circleShapTwo from "../Assets/circleShapTwo.png";
+import circleShapThree from "../Assets/circleShapThree.png";
+import svgShapOne from "../Assets/svgShapOne.png";
 
 function About() {
   let [perams, setPerams] = useState("addVideo");
@@ -53,13 +53,34 @@ function About() {
       </div>
       {perams === "addVideo" ? (
         <div className="about___contantOne">
-          <img src={circleShapThree}  className="about___contantOne--image1" alt='circleShapThree'/>
-          <img src={circleShapTwo}  className="about___contantOne--image2" alt='circleShapTwo'/>
+          <img
+            src={circleShapThree}
+            className="about___contantOne--image1"
+            alt="circleShapThree"
+          />
+          <img
+            src={circleShapTwo}
+            className="about___contantOne--image2"
+            alt="circleShapTwo"
+          />
+          <img
+            src={circleShapOne}
+            className="about___contantOne--image3"
+            alt="circleShapOne"
+          />
+          <img
+            src={svgShapOne}
+            className="about___contantOne--image4"
+            alt="svgShapOne"
+          />
           <div className="about___contantOne--video">
-            
+            <video width="100%" height="100%" controls>
+              <source
+                src="https://drive.google.com/uc?export=view&id=1ajbcjzA5sZQS0zzkdX873L8EB1W3wKVO"
+                type="video/mp4"
+              />
+            </video>
           </div>
-          <img src={circleShapOne}  className="about___contantOne--image3" alt='circleShapOne'/>
-          <img src={svgShapOne}  className="about___contantOne--image4" alt='svgShapOne'/>
         </div>
       ) : (
         <div className="about___contantTwo">
@@ -85,3 +106,4 @@ function About() {
 }
 
 export default About;
+// !https://drive.google.com/file/d/1ajbcjzA5sZQS0zzkdX873L8EB1W3wKVO/view?usp=sharing

@@ -1,0 +1,102 @@
+@import "../../App.css";
+
+.portfolio {
+  padding: 1rem 8rem;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio___detail {
+  width: 40%;
+  margin-left: 3rem;
+}
+
+.portfolio___image {
+  height: 100%;
+}
+
+.portfolio___image > img {
+  height: 100%;
+}
+
+section {
+  padding: 1rem 3rem;
+}
+
+.portfolio____gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio____gallery___heading--line1 {
+  position: relative;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  color: var(--hoverColor1);
+}
+
+.portfolio____gallery___heading--line1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  content: "";
+  background: var(--hoverColor1);
+  color: var(--hoverColor1);
+  z-index: 2;
+}
+
+.portfolio____gallery h1 {
+  position: relative;
+}
+.portfolio____gallery hr {
+  position: absolute;
+  width: 8rem;
+  right: -40%;
+  bottom: 15%;
+}
+
+.portfolio____gallery___heading--links {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--primary-color);
+  font-family: "Rubik", sans-serif;
+  transition: all 0.3s linear;
+}
+
+.portfolio____gallery___heading--links a {
+  margin-right: 18px;
+}
+
+.portfolio____gallery___heading--links a:last-child {
+  margin-right: 0px;
+}
+
+.portfolio____gallery___heading--links a:hover {
+  color: var(--hoverColor1);
+}
+
+a.aboutactive {
+  color: var(--hoverColor1);
+}
+
+.portfolio____gallery--cardSection {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.portfolio____gallery--cardSection___card{
+    border-radius: 15px;
+    height: 20vh;
+    background-color: var(--primary-color);
+}

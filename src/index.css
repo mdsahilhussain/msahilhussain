@@ -1,5 +1,117 @@
 @import "./App.css";
 
+/* ================== Page loader ====================== */
+
+.three-body {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: #5d3fd3;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.three-body__dot {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+}
+
+.three-body__dot:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: var(--hoverColor3);
+  border-radius: 50%;
+}
+
+.three-body__dot:nth-child(1) {
+  bottom: 5%;
+  left: 0;
+  transform: rotate(60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(1)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite ease-in-out;
+  animation-delay: calc(var(--uib-speed) * -0.3);
+  background-color: var(--primary-color);
+}
+
+.three-body__dot:nth-child(2) {
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(2)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15)
+    ease-in-out;
+  background-color: var(--hoverColor3);
+}
+
+.three-body__dot:nth-child(3) {
+  bottom: -5%;
+  left: 0;
+  transform: translateX(116.666%);
+}
+
+.three-body__dot:nth-child(3)::after {
+  top: 0;
+  left: 0;
+  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+  background-color: var(--hoverColor1);
+}
+
+@keyframes spin78236 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble1 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wobble2 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
 /* ================== About Me Component ====================== */
 .about {
   padding: 4rem 3rem;
@@ -71,47 +183,55 @@ a.aboutactive {
 }
 
 .about___contantOne {
-  margin-top: 10px;
+  margin-top: 18px;
   height: 80vh;
   width: 100%;
   position: relative;
 }
 
+.about___contantOne img {
+  position: absolute;
+  z-index: -1;
+}
+
+.about___contantOne img:nth-child(1) {
+  top: 30%;
+  left: 13%;
+  height: 80px;
+}
+.about___contantOne img:nth-child(2) {
+  top: 0%;
+  right: 14%;
+  height: 150px;
+}
+.about___contantOne img:nth-child(3) {
+  bottom: 0%;
+  left: 13%;
+  height: 80px;
+}
+.about___contantOne img:nth-child(4) {
+  bottom: -1%;
+  right: 14%;
+  height: 100px;
+}
+
 .about___contantOne--video {
+  margin-top: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  background-color: black;
-  width: 90%;
-  height: 80%;
+  width: fit-content;
+  height: 90%;
+  background-color: transparent;
 }
 
-.about___contantOne--image1,
-.about___contantOne--image2,
-.about___contantOne--image3,
-.about___contantOne--image4 {
-  position: absolute;
-  z-index: -1;
-}
-
-.about___contantOne--image1 {
-  top: 80px;
-  left: 0px;
-}
-.about___contantOne--image2 {
-  top: 0px;
-  right: 0px;
-}
-
-.about___contantOne--image3 {
-  bottom: 0px;
-  left: 80px;
-}
-.about___contantOne--image4 {
-  bottom: 0px;
-  right: 0px;
+.about___contantOne--video > video {
+  background-color: transparent;
+  border-radius: 15px;
+  outline: none;
+  border: none;
 }
 
 .about___contantTwo {

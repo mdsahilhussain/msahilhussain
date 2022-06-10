@@ -15,34 +15,29 @@ export default class Footer extends Component {
           <div className="footer___importantLinks">
             <ul>
               <li>
-                <Link to={""}>
+                <Link to={"/about"}>
                   <p>About Me</p>
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link to={"/project"}>
                   <p>Project</p>
-                </Link>
-              </li>
-              <li>
-                <Link to={""}>
-                  <p>Experience</p>
                 </Link>
               </li>
             </ul>
             <ul>
               <li>
-                <Link to={""}>
+                <Link to={"/certificate"}>
                   <p>Certificate</p>
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link to={"*"}>
                   <p>Blogs</p>
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link to={"*"}>
                   <p>FQA</p>
                 </Link>
               </li>
@@ -80,10 +75,10 @@ export default class Footer extends Component {
             <ul>
               <Link to={"#contact"} className="button_borders">
                 <button className="primary_button">
-                  <i class="fa-solid fa-file-arrow-down"></i> say hi..
+                  <i class="fa-solid fa-file-arrow-down"></i> Resume
                 </button>
               </Link>
-              <Link to={"#contact"} className="button_borders">
+              <Link to={"/contact"} className="button_borders">
                 <button className="primary_button">
                   <i className="fa-solid fa-user-plus"></i> Hire me
                 </button>

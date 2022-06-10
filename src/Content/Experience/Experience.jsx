@@ -29,68 +29,70 @@ export default class Experience extends Component {
   render() {
     const experienceDetail = workingHistory;
     return (
-      <div id="/#experience" className="experience">
-        <div className="experience___style">
-          <div className="experience___style___headlineSection">
-            <h4 className="experience___style___headlineSection--line1">
-              experiences
-            </h4>
-            <h1
-              data-aos="fade-up"
-              // data-aos-offset="200"
-              // data-aos-delay="50"
-            >
-              Working history <hr />
-            </h1>
-            <img
-              src={workingMen}
-              alt="workingMenImage"
-              className="experience___style___headlineSection--imgae1"
-              data-aos="fade-up"
-              // data-aos-offset="200"
-              // data-aos-delay="50"
-            />
-            <Link
-              to=""
-              className="experience___style___headlineSection--imgae2 pulsate-fwd"
-            >
+      <section id="#experience">
+        <div className="experience">
+          <div className="experience___style">
+            <div className="experience___style___headlineSection">
+              <h4 className="experience___style___headlineSection--line1">
+                experiences
+              </h4>
+              <h1
+                data-aos="fade-up"
+                // data-aos-offset="200"
+                // data-aos-delay="50"
+              >
+                Working history <hr />
+              </h1>
               <img
-                src={hireMe}
-                alt="hireMeImage"
+                src={workingMen}
+                alt="workingMenImage"
+                className="experience___style___headlineSection--imgae1"
                 data-aos="fade-up"
                 // data-aos-offset="200"
                 // data-aos-delay="50"
               />
-            </Link>
-          </div>
-          <div className="experience___style___workingDetail">
-            {experienceDetail.map((item, index) => {
-              return (
-                <div
-                  className="exerience___style__workingDetail--detail"
-                  key={index}
+              <Link
+                to=""
+                className="experience___style___headlineSection--imgae2 pulsate-fwd"
+              >
+                <img
+                  src={hireMe}
+                  alt="hireMeImage"
                   data-aos="fade-up"
-                  data-aos-delay={item.delay}
-                >
-                  <p>{item.duration}</p>
-                  <span className="exerience___style__workingDetail--detail___icon">
-                    <i class="fa-solid fa-briefcase"></i>
-                  </span>
-                  <h4>{item.companeyName}</h4>
-                  <h3>{item.jobTitle}</h3>
+                  // data-aos-offset="200"
+                  // data-aos-delay="50"
+                />
+              </Link>
+            </div>
+            <div className="experience___style___workingDetail">
+              {experienceDetail.map((item, index) => {
+                return (
+                  <div
+                    className="exerience___style__workingDetail--detail"
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={item.delay}
+                  >
+                    <p>{item.duration}</p>
+                    <span className="exerience___style__workingDetail--detail___icon">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <h4>{item.companeyName}</h4>
+                    <h3>{item.jobTitle}</h3>
 
-                  <p>{item.aboutCompaney}</p>
-                  <ul>
-                    {item.Roles.map((subitem, index) => {
-                      return <li key={index}>{subitem.role}</li>;
-                    })}
-                  </ul>
-                </div>
-              );
-            })}
+                    <p>{item.aboutCompaney}</p>
+                    <ul>
+                      {item.Roles.map((subitem, index) => {
+                        return <li key={index}>{subitem.role}</li>;
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

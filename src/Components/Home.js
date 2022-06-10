@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  Contact,
   Experience,
   Header,
   Highlight,
@@ -17,7 +16,6 @@ export default function Home() {
       <Experience/>
       <Project />
       <Testimonial/>
-      <Contact />
     </div>
   );
 }

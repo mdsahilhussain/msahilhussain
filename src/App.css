@@ -73,9 +73,11 @@ ul {
   list-style: none;
   margin: 0;
 }
-br{
+
+br {
   color: var(--hoverColor3);
 }
+
 a {
   text-decoration: none;
   color: unset;
@@ -171,6 +173,19 @@ a:hover {
 
 .shape {
   fill: var(--text-color);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--primary-color);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--primary-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--primary-color);
 }
 
 /* ================== Animation style ====================== */

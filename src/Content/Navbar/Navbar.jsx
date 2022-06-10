@@ -18,17 +18,18 @@ export default class Navbar extends Component {
           </div>
           <div className="navbar___links">
             <NavLink
-              to={"/about"} state={{params: "addVideo", subTitle:""}}
+              to={"/about"}
+              state={{ params: "addVideo", subTitle: "" }}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               About me
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to={"/#experience"}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Experience
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to={"/certificate"}
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -41,10 +42,7 @@ export default class Navbar extends Component {
             >
               Project
             </NavLink>
-            <NavLink
-              to={"#contact"}
-              className="button_borders"
-            >
+            <NavLink to={"/contact"} className="button_borders">
               <button className="primary_button">Say hi..</button>
             </NavLink>
           </div>

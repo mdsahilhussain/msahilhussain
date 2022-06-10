@@ -7,10 +7,25 @@ import { Link } from "react-router-dom";
 //* ================================ use css style sheat ================================
 import "./header.css";
 // *================================ use images ================================
-import headerImage from "../../Assets/headerImage.png";
+import headerImage from "../../Assets/headerImage.svg";
 
 export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loader: false,
+    };
+  }
+
+  loadingFuntion() {
+    this.setState({ loader: true });
+    setTimeout(() => {
+      this.setState({ loader: false });
+      console.log("goo");
+    }, 1000);
+  }
   componentDidMount() {
+    this.loadingFuntion();
     // /or simply just AOS.init();
     AOS.init({
       // / initialise with other settings
@@ -65,7 +80,7 @@ export default class Header extends Component {
               </button>
             </Link>
             <Link
-              to={"#contact"}
+              to={"/contact"}
               className="button_borders"
               data-aos="fade-up"
               // data-aos-offset="200"
@@ -117,7 +132,15 @@ export default class Header extends Component {
           data-aos-delay="700"
           data-aos-easing="linear"
         >
-          <img src={headerImage} alt="headerImage" />
+          {this.state.loader ? (
+            <div class="three-body">
+              <div class="three-body__dot"></div>
+              <div class="three-body__dot"></div>
+              <div class="three-body__dot"></div>
+            </div>
+          ) : (
+            <img src={headerImage} alt="headerImage" />
+          )}
         </div>
       </header>
     );

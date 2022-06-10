@@ -14,11 +14,11 @@
 
 .footer___importantLinks {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer___importantLinks ul:first-child {
-  margin-right: 50px;
+  margin-right: 20vw;
 }
 
 .footer___importantLinks li {
