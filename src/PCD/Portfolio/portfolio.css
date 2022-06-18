@@ -92,11 +92,51 @@ a.aboutactive {
   margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 3rem;
+  gap: 3rem;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.portfolio____gallery--cardSection___card{
-    border-radius: 15px;
-    height: 20vh;
-    background-color: var(--primary-color);
+.portfolio____gallery--cardSection___card {
+  border-radius: 15px;
+  height: 20vh;
+  object-fit: fill;
+}
+
+.portfolio____gallery--cardSection___card--detail {
+  display: none;
+  height: 100%;
+  background-color: var(--hoverColor1);
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.portfolio____gallery--cardSection___card:hover
+  .portfolio____gallery--cardSection___card--detail {
+  display: block;
+}
+.portfolio____gallery--cardSection___card--detail___text {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  left: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.portfolio____gallery--cardSection___card--detail___text a {
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  right: 3rem;
+  cursor: pointer;
+  outline: none;
+  color: var(--text-color);
+}
+
+.portfolio____gallery--cardSection___card--detail a:hover {
+  color: var(--hoverColor3);
 }

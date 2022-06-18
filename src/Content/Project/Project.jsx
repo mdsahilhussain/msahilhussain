@@ -12,19 +12,19 @@ export default class Project extends Component {
     {
       icon: mobileAppIcon,
       cardHeader: "Mobile App Design",
-      link: "",
+      link: "/project",
       delay: "100",
     },
     {
       icon: webDesignIcon,
       cardHeader: "Web App Design",
-      link: "",
+      link: "/project",
       delay: "200",
     },
     {
       icon: frontEndDevIcon,
       cardHeader: "Front End Development",
-      link: "",
+      link: "/project",
       delay: "300",
     },
   ];
@@ -41,10 +41,12 @@ export default class Project extends Component {
             // data-aos-delay="50"
           >
             My Latest Works{" "}
-            <span>
-              Explore More Works{" "}
-              <i className="fa-solid fa-arrow-right-long slide-right"></i>
-            </span>
+            <Link to="/project">
+              <span>
+                Explore More Works{" "}
+                <i className="fa-solid fa-arrow-right-long slide-right"></i>
+              </span>
+            </Link>
           </h1>
         </div>
         <div className="project___card">

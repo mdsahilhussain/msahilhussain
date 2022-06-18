@@ -88,7 +88,12 @@ export default class Testimonial extends Component {
                           <div className="testimonial___card--contant___detail--icon">
                             {item.social.map((subItem, index) => {
                               return (
-                                <a href={subItem.Url} key={index}>
+                                <a
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  href={subItem.Url}
+                                  key={index}
+                                >
                                   <i className={subItem.Icon}></i>
                                 </a>
                               );

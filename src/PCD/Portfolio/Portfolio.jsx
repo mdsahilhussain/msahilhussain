@@ -1,13 +1,13 @@
 import React from "react";
 import { portfolioData } from "./portfolioData";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./portfolio.css";
 
 import projectHeaderImage from "../../Assets/projectHerderimage.png";
 function Portfolio() {
-  // const Data = portfolioData();
+  const data = portfolioData;
   return (
     <>
       <header className="portfolio">
@@ -28,9 +28,9 @@ function Portfolio() {
           <div className="portfolio____gallery___heading">
             <h4 className="portfolio____gallery___heading--line1">portfolio</h4>
             <h1
-              data-aos="fade-up"
-              // data-aos-offset="200"
-              // data-aos-delay="50"
+            // data-aos="fade-up"
+            // data-aos-offset="200"
+            // data-aos-delay="50"
             >
               Selected work <hr />
             </h1>
@@ -67,9 +67,32 @@ function Portfolio() {
           </div>
         </div>
         <div className="portfolio____gallery--cardSection">
-          <div className="portfolio____gallery--cardSection___card"></div>
-          <div className="portfolio____gallery--cardSection___card"></div>
-          <div className="portfolio____gallery--cardSection___card"></div>
+          {data.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="portfolio____gallery--cardSection___card"
+                style={{
+                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${item.bgImgURL})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="portfolio____gallery--cardSection___card--detail">
+                  <div className="portfolio____gallery--cardSection___card--detail___text">
+                    <div>
+                      <h4>{item.name}</h4>
+                      <p>hello</p>
+                    </div>
+                    <Link target="_blank" rel="noreferrer" to={item.url} >
+                      <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

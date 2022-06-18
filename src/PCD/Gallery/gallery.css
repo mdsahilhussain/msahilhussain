@@ -1,0 +1,45 @@
+@import "../../App.css";
+
+.gallery {
+  padding: 1rem 3rem;
+  margin-top: -10px;
+  height: fit-content;
+  position: relative;
+}
+
+.gallery___slider--image {
+  height: 100%;
+}
+
+.gallery___slider--image > img {
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.galleryArrow {
+  position: absolute;
+  z-index: 10;
+  height: 90vh;
+  top: 0;
+  background-color: transparent;
+}
+
+.galleryNext {
+  cursor: url(../../Assets/previos.png), auto;
+  width: 50%;
+  left: 0;
+}
+
+.galleryPrev {
+  cursor: url(../../Assets/next.png), auto;
+  width: 50%;
+  right: 0;
+}
+
+.gallery___slider--detail {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}

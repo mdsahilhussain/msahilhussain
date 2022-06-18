@@ -67,7 +67,7 @@ export default class Header extends Component {
           </p>
           <div className="header___title-btn">
             <Link
-              to={"#contact"}
+              to={"/contact"}
               className="button_borders"
               data-aos="fade-up"
               // data-aos-offset="200"
@@ -96,7 +96,7 @@ export default class Header extends Component {
           <div className="header__title--socialLink">
             <p>Check Out My</p>
             <hr />
-            <a
+            <a target="_blank" rel='noreferrer'
               href="https://www.behance.net/msahilhussain"
               data-aos="fade-up"
               data-aos-offset="50"
@@ -105,7 +105,7 @@ export default class Header extends Component {
             >
               <i className="fa-brands fa-behance"></i>
             </a>
-            <a
+            <a target="_blank" rel='noreferrer'
               href="https://www.linkedin.com/in/m-sahil-hussain-75b5181a6/"
               data-aos="fade-up"
               data-aos-offset="50"
@@ -114,7 +114,7 @@ export default class Header extends Component {
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a
+            <a target="_blank" rel='noreferrer'
               href="https://mdsahilhussain.github.io/gitprofile/"
               data-aos="fade-up"
               data-aos-offset="50"

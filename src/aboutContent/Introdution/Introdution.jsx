@@ -21,6 +21,24 @@ export default class Introdution extends Component {
       url: "",
     },
   ];
+  projectNumber = [
+    {
+      num: "500+",
+      topic: "DSA problem solve",
+    },
+    {
+      num: "13+",
+      topic: "App UI project",
+    },
+    {
+      num: "15+",
+      topic: "Web UI project",
+    },
+    {
+      num: "8+",
+      topic: "Front End Project",
+    },
+  ];
   render() {
     return (
       <div className="introduction">
@@ -50,22 +68,18 @@ export default class Introdution extends Component {
           })}
         </ul>
         <ul className="introduction___numberFiger">
-          <li>
-            <h2>500+</h2>
-            <p>DSA problem solve</p>
-          </li>
-          <li>
-            <h2>500+</h2>
-            <p>DSA problem solve</p>
-          </li>
-          <li>
-            <h2>500+</h2>
-            <p>DSA problem solve</p>
-          </li>
-          <li>
-            <h2>500+</h2>
-            <p>DSA problem solve</p>
-          </li>
+          {this.projectNumber.map((item, index) => {
+            return (
+              <li>
+                <h2 className="flicker-4">{item.num}</h2>
+                <p>
+                  {item.topic}
+                  {""}
+                  <i className="fa-solid fa-check introduction___numberFiger--check"></i>
+                </p>
+              </li>
+            );
+          })}
         </ul>
       </div>
     );

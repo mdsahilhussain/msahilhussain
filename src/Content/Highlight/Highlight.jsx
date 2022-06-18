@@ -7,7 +7,7 @@ export default class Highlight extends Component {
     {
       icon: "fa-solid fa-mobile-button",
       cardHeader: "Mobile App Design",
-      cardBody: "10+ Project",
+      cardBody: "13+ Project",
       delay: "100",
     },
     {
@@ -91,7 +91,7 @@ export default class Highlight extends Component {
               data-aos-easing="liner"
             >
               <div style={{ float: "right" }}>
-                <h1>33+</h1>
+                <h1>35+</h1>
                 <h3>Project Completed</h3>
               </div>
             </div>

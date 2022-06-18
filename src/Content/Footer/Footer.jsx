@@ -32,7 +32,7 @@ export default class Footer extends Component {
                 </Link>
               </li>
               <li>
-                <Link to={"*"}>
+                <Link target="_blank" rel="noreferrer" to={"*"}>
                   <p>Blogs</p>
                 </Link>
               </li>
@@ -45,37 +45,49 @@ export default class Footer extends Component {
           </div>
           <div className="footer___soicalLinks">
             <ul className="socialIcon">
-              <a href="https://www.behance.net/msahilhussain">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.behance.net/msahilhussain"
+              >
                 <i className="fa-brands fa-behance"></i>
               </a>
-              <a href="https://www.linkedin.com/in/m-sahil-hussain-75b5181a6/">
-                <i class="fa-brands fa-linkedin-in"></i>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/m-sahil-hussain-75b5181a6/"
+              >
+                <i className="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://mdsahilhussain.github.io/gitprofile/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://mdsahilhussain.github.io/gitprofile/"
+              >
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href={"/"}>
-                <i class="fa-brands fa-twitter"></i>
+              <a target="_blank" rel="noreferrer" href={"/"}>
+                <i className="fa-brands fa-twitter"></i>
               </a>
             </ul>
             <ul className="socialIcon">
-              <a href={"/"}>
-                <i class="fa-brands fa-dribbble"></i>
+              <a target="_blank" rel="noreferrer" href={"/"}>
+                <i className="fa-brands fa-dribbble"></i>
               </a>
-              <a href={"/"}>
-                <i class="fa-brands fa-pinterest"></i>
+              <a target="_blank" rel="noreferrer" href={"/"}>
+                <i className="fa-brands fa-pinterest"></i>
               </a>
-              <a href={"/"}>
-                <i class="fa-solid fa-at"></i>
+              <a target="_blank" rel="noreferrer" href={"/"}>
+                <i className="fa-solid fa-at"></i>
               </a>
-              <a href={"/"}>
-                <i class="fa-brands fa-facebook"></i>
+              <a target="_blank" rel="noreferrer" href={"/"}>
+                <i className="fa-brands fa-facebook"></i>
               </a>
             </ul>
             <ul>
               <Link to={"#contact"} className="button_borders">
                 <button className="primary_button">
-                  <i class="fa-solid fa-file-arrow-down"></i> Resume
+                  <i className="fa-solid fa-file-arrow-down"></i> Resume
                 </button>
               </Link>
               <Link to={"/contact"} className="button_borders">

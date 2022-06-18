@@ -7,7 +7,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 
 import { Footer, Navbar, Contact } from "./Content";
-import { Certfication, Portfolio } from "./PCD";
+import { Certfication,  GalleryPG, GalleryPI, Portfolio } from "./PCD";
 
 function App() {
   const [loading, setLoding] = useState(false);
@@ -16,7 +16,7 @@ function App() {
     setLoding(true);
     setTimeout(() => {
       setLoding(false);
-    }, 8000);
+    }, 6000);
   }, []);
 
   return (
@@ -36,6 +36,8 @@ function App() {
             <Route path="/certificate" element={<Certfication />} />
             <Route path="/project" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/photogallery" element={<GalleryPG />} />
+            <Route path="/artgallery" element={<GalleryPI />} />
           </Routes>
           <Footer />
         </>
