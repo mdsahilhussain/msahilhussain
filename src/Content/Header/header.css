@@ -75,3 +75,49 @@ header > .header___imgSection {
 .header___imgSection > img {
   height: 100%;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 0px;
+    height: 80vh;
+  }
+  .header___title {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .header___title span {
+    font-size: 2.5rem;
+  }
+
+  .header___title-btn {
+    margin-top: 20px;
+  }
+  .header__title--socialLink {
+    bottom: 3%;
+    align-items: center;
+  }
+
+  .header__title--socialLink hr {
+    width: 1rem;
+  }
+
+  .header__title--socialLink i {
+    font-size: 18px;
+  }
+  header > .header___imgSection {
+    height: 100%;
+    width: 100%;
+  }
+
+  .header___imgSection > img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-
 import { certficationData } from "./certficationData";
 import "./certfication.css";
+import { LoadingProvider } from "../../Context/LoadingContext";
 
 export default class Certfication extends Component {
   render() {
@@ -15,10 +15,12 @@ export default class Certfication extends Component {
             return (
               <div className="certification___body--content">
                 <div className="certification___body--image slide-in-bottom">
-                  <img
-                    src={`https://drive.google.com/uc?export=view&id=${item.imageURL}`}
-                    alt=""
-                  />
+                  <LoadingProvider>
+                    <img
+                      src={`https://drive.google.com/uc?export=view&id=${item.imageURL}`}
+                      alt=""
+                    />
+                  </LoadingProvider>
                 </div>
                 <br />
                 <div className="certification___body--detail">

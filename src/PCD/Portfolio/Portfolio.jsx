@@ -71,6 +71,8 @@ function Portfolio() {
             return (
               <div
                 key={index}
+                // data-aos-easing="linear"
+                // data-aos="fade-up"
                 className="portfolio____gallery--cardSection___card"
                 style={{
                   backgroundImage: `url(https://drive.google.com/uc?export=view&id=${item.bgImgURL})`,
@@ -85,7 +87,7 @@ function Portfolio() {
                       <h4>{item.name}</h4>
                       <p>hello</p>
                     </div>
-                    <Link target="_blank" rel="noreferrer" to={item.url} >
+                    <Link target="_blank" rel="noreferrer" to={item.url}>
                       <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
                     </Link>
                   </div>

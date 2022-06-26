@@ -110,3 +110,58 @@
   left: 48%;
   bottom: 15%;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .highLight {
+    margin-top: 10px;
+    padding: 1rem 1.5rem;
+  }
+
+  .highLight___cardSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .highLight___cardSection--card i {
+    border-radius: 8px;
+    font-size: 28px;
+  }
+
+  .highLight___detailSection {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: none;
+  }
+
+  .highLight___detailSection--numberFiger {
+    width: 100%;
+    flex-direction: row;
+    margin-top: -2rem;
+  }
+
+  .highLight___detailSection--numberFiger h1 {
+    font-size: 5rem;
+    margin-bottom: -1rem;
+  }
+
+  .highLight___detailSection--line {
+    width: 100%;
+  }
+
+  .highLight___detailSection--line h1 {
+    margin-bottom: 10px;
+  }
+
+  .highLight___detailSection--line p {
+    line-height: 1.5;
+    margin-left: 0rem;
+    margin-bottom: 18px;
+  }
+  .highLight___detailSection--line p:last-child {
+    margin-bottom: 0;
+  }
+}

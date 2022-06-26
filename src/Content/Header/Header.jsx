@@ -10,22 +10,7 @@ import "./header.css";
 import headerImage from "../../Assets/headerImage.svg";
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loader: false,
-    };
-  }
-
-  loadingFuntion() {
-    this.setState({ loader: true });
-    setTimeout(() => {
-      this.setState({ loader: false });
-      console.log("goo");
-    }, 1000);
-  }
   componentDidMount() {
-    this.loadingFuntion();
     // /or simply just AOS.init();
     AOS.init({
       // / initialise with other settings
@@ -75,7 +60,6 @@ export default class Header extends Component {
               data-aos-easing="linear"
             >
               <button className="primary_button">
-                {" "}
                 <i class="fa-solid fa-file-arrow-down"></i> Resume
               </button>
             </Link>
@@ -96,7 +80,9 @@ export default class Header extends Component {
           <div className="header__title--socialLink">
             <p>Check Out My</p>
             <hr />
-            <a target="_blank" rel='noreferrer'
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.behance.net/msahilhussain"
               data-aos="fade-up"
               data-aos-offset="50"
@@ -105,7 +91,9 @@ export default class Header extends Component {
             >
               <i className="fa-brands fa-behance"></i>
             </a>
-            <a target="_blank" rel='noreferrer'
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/m-sahil-hussain-75b5181a6/"
               data-aos="fade-up"
               data-aos-offset="50"
@@ -114,7 +102,9 @@ export default class Header extends Component {
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a target="_blank" rel='noreferrer'
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://mdsahilhussain.github.io/gitprofile/"
               data-aos="fade-up"
               data-aos-offset="50"
@@ -132,15 +122,7 @@ export default class Header extends Component {
           data-aos-delay="700"
           data-aos-easing="linear"
         >
-          {this.state.loader ? (
-            <div class="three-body">
-              <div class="three-body__dot"></div>
-              <div class="three-body__dot"></div>
-              <div class="three-body__dot"></div>
-            </div>
-          ) : (
-            <img src={headerImage} alt="headerImage" />
-          )}
+          <img src={headerImage} alt="headerImage" />
         </div>
       </header>
     );

@@ -31,7 +31,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar___links a:hover{
+.navbar___links a:hover {
   font-size: 32px;
   font-weight: 500;
   color: var(--hoverColor1);
@@ -46,3 +46,39 @@ a.active {
   font-size: 13px;
   margin-left: 16px;
 }
+
+.navbar___mobile {
+  display: none;
+}
+.navbar___mobile___img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar___mobile___img img {
+  height: 5vh;
+}
+
+.navbar___mobile___img i {
+  font-size: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    padding: 1.5rem 1.5rem;
+  }
+  
+  .navbar {
+    display: none;
+  }
+
+  .navbar___mobile {
+    display: block;
+  }
+}
+

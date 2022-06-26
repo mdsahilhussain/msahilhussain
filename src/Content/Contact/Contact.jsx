@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import contactHeaderImage from "../../Assets/contactHeaderImage.png";
+import contactHeaderImage from "../../Assets/contactHeaderImage.jpg";
 
 import "./contact.css";
 
@@ -53,10 +53,20 @@ export default function Contact() {
             </h3>
             <ul>
               <li>
-                <i className="fa fa-whatsapp"></i> <a target="_blank" rel='noreferrer' href="https://wa.me/8677876958">WhatsApp me</a>
+                <i className="fa fa-whatsapp"></i>{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://wa.me/8677876958"
+                >
+                  WhatsApp me
+                </a>
               </li>
               <li>
-                <i className="fa-solid fa-phone"></i> <a target="_blank" rel='noreferrer' href="tel:+916200083799">Call me</a>
+                <i className="fa-solid fa-phone"></i>{" "}
+                <a target="_blank" rel="noreferrer" href="tel:+916200083799">
+                  Call me
+                </a>
               </li>
             </ul>
           </div>

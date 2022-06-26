@@ -9,7 +9,16 @@ import Logo from "../../Assets/logoImage.svg";
 export default class Navbar extends Component {
   render() {
     return (
+      
       <nav>
+        <div className="navbar___mobile">
+        <div className="navbar___mobile___img">
+            <NavLink to={"/"}>
+              <img src={Logo} alt="logoIMG" />
+            </NavLink>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
         <div className="navbar">
           <div className="navbar___img">
             <NavLink to={"/"}>

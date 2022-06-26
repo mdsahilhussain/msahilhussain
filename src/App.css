@@ -103,6 +103,8 @@ a:hover {
   transition-property: background-position, border, color;
   position: relative;
   z-index: 1;
+  outline: none;
+  border: none;
 }
 
 .primary_button:hover {
@@ -508,5 +510,63 @@ a:hover {
     -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .primary_button {
+    font-size: 13px;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 0.8rem;
   }
 }
