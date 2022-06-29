@@ -15,6 +15,7 @@ export default class Header extends Component {
     AOS.init({
       // / initialise with other settings
       duration: 1000,
+      disable: 'mobile'
     });
     AOS.refresh();
   }

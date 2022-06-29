@@ -86,7 +86,6 @@
 }
 
 .testimonial___card--contant___detailcard {
-  padding: 0.5rem 3rem;
   width: 60%;
   height: 50%;
   background-color: var(--cardColor);
@@ -118,4 +117,90 @@
 
 .testimonial___card--contant___detail--icon a:hover {
   color: var(--hoverColor1);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .testimonial {
+    padding: 1.5rem 1.5rem;
+    height: 65vh;
+  }
+
+  .testimonial___heading--line1 {
+    font-size: 14px;
+  }
+
+  .testimonial___heading h1 {
+    position: relative;
+    font-size: 34px;
+  }
+
+  .testimonial___card {
+    width: 90vw;
+  }
+
+  .arrow {
+    bottom: -30px;
+    font-size: 18px;
+  }
+
+  .prev_arrow {
+    right: 60px;
+  }
+
+  .next_arrow {
+    right: 20px;
+  }
+
+  .testimonial___card--height {
+    height: 100%;
+  }
+  .testimonial___card--contant {
+    padding: 0.5rem;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .testimonial___card--contant___image {
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .testimonial___card--contant___image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .testimonial___card--contant___detailcard {
+    padding: 0rem 0rem;
+    width: 100%;
+    margin-top: -5rem;
+    height: fit-content;
+    border-radius: 8px;
+  }
+
+  .testimonial___card--contant___detail {
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+  .testimonial___card--contant___detail h3 {
+    font-size: 16px;
+  }
+  .testimonial___card--contant___detail h4 {
+    font-size: 12px;
+  }
+  .testimonial___card--contant___detail p {
+    margin: 10px 0 18px 0;
+    line-height: 1.5;
+    font-size: 9px;
+  }
+
+  .testimonial___card--contant___detail--icon a {
+    font-size: 1rem;
+  }
+
 }

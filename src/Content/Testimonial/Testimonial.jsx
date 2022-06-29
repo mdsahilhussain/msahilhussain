@@ -106,10 +106,6 @@ export default class Testimonial extends Component {
                 );
               })}
             </Slider>
-            {/* <div className="testimonial___card--arrow">
-            <span className="arrow_prev"><i className="fa-solid fa-arrow-left-long" onClick={this.previous}></i></span>
-              <span className="arrow_next"><i className="fa-solid fa-arrow-right-long" onClick={this.next}></i></span>
-            </div> */}
           </div>
         </div>
       </div>

@@ -91,3 +91,48 @@
 .project___card--contant___body i {
   vertical-align: middle;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .project {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    height: 50vh;
+    margin-top: 0px;
+  }
+
+  .project___heading--line1 {
+    font-size: 14px;
+  }
+
+  .project___heading--line2 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project___heading--line2::before {
+    display: none;
+  }
+
+  .project___card {
+    margin-top: 24px;
+    grid-template-columns: repeat(3, 250px);
+    column-gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .project___card--contant {
+    height: 40vh;
+    border-radius: 8px;
+  }
+
+  .project___card--contant___body {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .project___card--contant___body img {
+    height: 50px;
+  }
+}

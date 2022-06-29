@@ -3,13 +3,12 @@
 .footer {
   padding: 5rem 3rem 1rem 3rem;
   background-color: var(--cardColor);
- 
 }
 
-.footer--boday{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer--boday {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer___importantLinks {
@@ -39,29 +38,112 @@
   margin-bottom: 0;
 }
 
-.footer___soicalLinks a{
-    margin-right: 18px;
+.footer___soicalLinks a {
+  margin-right: 18px;
 }
 
-.socialIcon i{
+.socialIcon i {
+  cursor: pointer;
+  font-size: 32px;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+.socialIcon i:hover {
+  color: var(--hoverColor1);
+}
+
+.footer__lower {
+  padding: 2rem 4rem 0rem 4rem;
+  text-align: center;
+}
+
+.footer__lower p {
+  text-transform: lowercase;
+  opacity: 100%;
+  padding-top: 1rem;
+  border-top: 2px solid var(--bg-color);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  .footer--boday {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer___imge {
+    width: 50px;
+  }
+
+  .footer___imge > img {
+    width: 100%;
+  }
+
+  .footer___importantLinks {
+    display: flex;
+    
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .footer___importantLinks ul{
+    margin-top: 18px;
+  }
+  .footer___importantLinks ul:first-child {
+    margin-right: 0vw;
+  }
+
+  .footer___importantLinks li {
+    margin-bottom: 18px;
+  }
+
+  .footer___importantLinks li:last-child {
+    margin-bottom: 0px;
+  }
+  .footer___soicalLinks {
+    margin-top: 24px;
+  }
+  .footer___soicalLinks ul {
+    margin-bottom: 18px;
+  }
+
+  .footer___soicalLinks ul:last-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .footer___soicalLinks a {
+    margin-right: 18px;
+  }
+
+  .socialIcon i {
     cursor: pointer;
-    font-size: 32px;
+    font-size: 18px;
     color: var(--primary-color);
     transition: all 0.3s linear;
-}
+  }
 
-.socialIcon i:hover{
+  .socialIcon i:hover {
     color: var(--hoverColor1);
-}
+  }
 
-.footer__lower{
-    padding: 2rem 4rem 0rem 4rem;
-    text-align: center;
-}
+  .footer__lower {
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: left;
+  }
 
-.footer__lower p{
+  .footer__lower p {
     text-transform: lowercase;
     opacity: 100%;
     padding-top: 1rem;
     border-top: 2px solid var(--bg-color);
+  }
 }
