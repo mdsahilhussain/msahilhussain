@@ -143,8 +143,8 @@
   }
 
   .experience___style___headlineSection--imgae2 {
-    bottom: -85vh;
-    right: -10%;
+    bottom: -90vh;
+    right: -5%;
     height: 80px;
   }
 
@@ -154,7 +154,7 @@
 
   .experience___style___workingDetail {
     margin-top: 18px;
-    width: 100%;
+    width: 85%;
     padding: 1rem 1.5rem;
     border-radius: 10px;
   }

@@ -130,6 +130,39 @@
     font-size: 28px;
   }
 
+  .highLight___cardSection--card {
+    border: none;
+    box-shadow: 12px 12px 25px rgba(6, 10, 20, 0.45),
+      -12px -12px 25px rgba(22, 38, 78, 0.45);
+  }
+
+  .highLight___cardSection--card:nth-child(1) i {
+    background-color: var(--hoverColor1);
+    color: var(--text-color);
+  }
+
+  .highLight___cardSection--card:nth-child(1) h4 {
+    color: var(--hoverColor1);
+  }
+
+  .highLight___cardSection--card:nth-child(2) i {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+
+  .highLight___cardSection--card:nth-child(2) h4 {
+    color: var(--primary-color);
+  }
+
+  .highLight___cardSection--card:nth-child(3) i {
+    background-color: var(--hoverColor3);
+    color: var(--text-color);
+  }
+
+  .highLight___cardSection--card:nth-child(3) h4 {
+    color: var(--hoverColor3);
+  }
+
   .highLight___detailSection {
     margin-top: 2rem;
     flex-direction: column-reverse;

@@ -60,3 +60,57 @@
   border-radius: 25px;
   object-fit: fill;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .certification {
+    padding: 1.5rem 1.5rem;
+    height: 85vh;
+  }
+  
+  .certification___body {
+    height: 100%;
+  }
+  
+  .certification___body--content {
+    align-items: flex-start;
+    height: 36%;
+    margin-bottom: 4rem;
+    flex-direction: column;
+  }
+  
+  .certification___body--detail {
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .certification___body--detail__content {
+    width: 100%;
+    height: fit-content;
+    bottom: 0%;
+    left: 0%;
+  }
+  
+  .certification___body--detail__content h2 {
+    font-size: 18px;
+  }
+
+  
+  .certification___body--detail__content p {
+    margin-top: 1px;
+    font-size: 9px;
+  }
+  
+  .certification___body--image {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .certification___body--image > img {
+    border-radius: 5px;
+  }
+}
