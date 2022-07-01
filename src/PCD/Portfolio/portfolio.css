@@ -29,7 +29,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .portfolio____gallery___heading--line1 {
@@ -62,9 +61,6 @@ section {
 }
 
 .portfolio____gallery___heading--links {
-  position: absolute;
-  right: 3%;
-  bottom: 10%;
   font-size: 18px;
   font-weight: 300;
   color: var(--primary-color);
@@ -139,4 +135,91 @@ a.aboutactive {
 
 .portfolio____gallery--cardSection___card--detail a:hover {
   color: var(--hoverColor3);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+  }
+
+  .portfolio___detail {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .portfolio___image {
+    height: 80%;
+  }
+
+  .portfolio___image > img {
+    height: 100%;
+  }
+
+  section {
+    padding: 1rem 1.5rem;
+  }
+
+  .portfolio____gallery {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .portfolio____gallery___heading--line1 {
+    font-size: 13px;
+  }
+
+  .portfolio____gallery___heading--links {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .portfolio____gallery___heading--links a {
+    margin-right: 10px;
+  }
+
+  .portfolio____gallery___heading--links a:last-child {
+    margin-right: 0px;
+  }
+
+  .portfolio____gallery___heading--links a:hover {
+    color: var(--hoverColor1);
+  }
+
+  a.aboutactive {
+    color: var(--hoverColor1);
+  }
+
+  .portfolio____gallery--cardSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio____gallery--cardSection___card {
+    border-radius: 8px;
+    height: 10vh;
+  }
+
+  .portfolio____gallery--cardSection___card--detail {
+    border-radius: 8px;
+  }
+
+  .portfolio____gallery--cardSection___card--detail___text {
+    bottom: 11px;
+    left: 11px;
+  }
+  .portfolio____gallery--cardSection___card--detail___text h4 {
+    font-size: 13px;
+  }
+  .portfolio____gallery--cardSection___card--detail___text p {
+    font-size: 10px;
+  }
+  .portfolio____gallery--cardSection___card--detail___text a {
+    font-size: 12px;
+
+    right: 1.5rem;
+  }
 }
