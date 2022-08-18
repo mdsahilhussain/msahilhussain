@@ -24,6 +24,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #0e1831 #0e1831;
+  scrollbar-width: thin;
 }
 
 h1,
@@ -287,11 +289,14 @@ a:hover {
 
 ::-webkit-scrollbar {
   width: 1px;
+  scrollbar-width: 1px;
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;
+  scrollbar-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
+  scrollbar-color: transparent;
   background-color: transparent;
 }
 
@@ -519,23 +524,26 @@ a:hover {
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   p {
-    font-size: 11px;
+    font-size: 18px;
+  }
+  hr {
+    display: none;
   }
 }
 
@@ -568,8 +576,5 @@ a:hover {
     font-size: 13px;
     letter-spacing: 0.05rem;
     padding: 0.5rem 0.8rem;
-  }
-  hr {
-    display: none;
   }
 }

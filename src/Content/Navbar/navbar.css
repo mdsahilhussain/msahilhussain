@@ -42,6 +42,10 @@ a.active {
   font-weight: 500;
   color: var(--hoverColor1);
 }
+
+a.activeForMobile {
+  color: var(--bg-color);
+}
 .navbar___links a:last-child {
   font-size: 13px;
   margin-left: 16px;
@@ -60,19 +64,36 @@ a.active {
 }
 
 .navbar___mobile___img i {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--text-color);
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
+.navbar___mobile--linkList {
+  background-color: var(--hoverColor1);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.navbar___mobile--linkList ul {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 576px) {
-  nav {
-    padding: 1.5rem 1.5rem;
-  }
-  
+.navbar___mobile--linkList li {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color);
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
   .navbar {
     display: none;
   }
@@ -82,3 +103,11 @@ a.active {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  nav {
+    padding: 1.5rem 1.5rem;
+  }
+  .navbar___mobile___img i {
+    font-size: 20px;
+  }
+}

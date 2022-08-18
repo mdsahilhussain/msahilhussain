@@ -52,3 +52,67 @@
   line-height: 1.5;
   font-size: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .education {
+    width: 100%;
+  }
+  .education___style___workingDetail {
+    background-color: transparent;
+    padding: 2rem 0rem;
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .education___style__workingDetail--detail {
+    position: relative;
+    padding: 1rem 0rem 1rem 2rem;
+    z-index: 1;
+  }
+
+  .education___style__workingDetail--detail::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: var(--primary-color);
+    color: var(--primary-color);
+    z-index: 2;
+  }
+
+  .education___style__workingDetail--detail___icon {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    z-index: 10;
+  }
+
+  .education___style__workingDetail--detail h4 {
+    font-size: 14px;
+  }
+
+  .education___style__workingDetail--detail h3 {
+    margin: 2px 0 10px 0;
+    font-size: 18px;
+  }
+
+
+  .education___style__workingDetail--detail ul {
+    margin-top: 18px;
+    list-style-type: disc;
+    color: var(--text-color);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    list-style-position: inside;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+}

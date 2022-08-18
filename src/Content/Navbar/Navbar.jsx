@@ -7,16 +7,63 @@ import "./navbar.css";
 import Logo from "../../Assets/logoImage.svg";
 
 export default class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = { mobileNavbar: false };
+  }
+  mobileNavbarShow = () => {
+    this.setState({ mobileNavbar: !this.state.mobileNavbar });
+  };
   render() {
     return (
-      
       <nav>
         <div className="navbar___mobile">
-        <div className="navbar___mobile___img">
+          <div className="navbar___mobile___img">
             <NavLink to={"/"}>
               <img src={Logo} alt="logoIMG" />
             </NavLink>
-            <i class="fa-solid fa-bars"></i>
+            {this.state.mobileNavbar ? (
+              <i class="fa-solid fa-xmark" onClick={this.mobileNavbarShow}></i>
+            ) : (
+              <i class="fa-solid fa-bars" onClick={this.mobileNavbarShow}></i>
+            )}
+          </div>
+          <div
+            className="navbar___mobile--linkList"
+            style={{ display: this.state.mobileNavbar ? "block" : "none" }}
+          >
+            <ul>
+              <li>
+                <NavLink
+                  to={"/about"}
+                  state={{ params: "addVideo", subTitle: "activeForMobile" }}
+                  className={({ isActive }) => (isActive ? "" : "")}
+                  onClick={this.mobileNavbarShow}
+                >
+                  About me
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/certificate"}
+                  state={{ params: "addVideo", subTitle: "activeForMobile" }}
+                  className={({ isActive }) => (isActive ? "" : "")}
+                  onClick={this.mobileNavbarShow}
+                >
+                  Certificate
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/project"}
+                  state={{ params: "addVideo", subTitle: "activeForMobile" }}
+                  className={({ isActive }) => (isActive ? "" : "")}
+                  onClick={this.mobileNavbarShow}
+                >
+                  Project
+                </NavLink>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="navbar">
@@ -33,12 +80,6 @@ export default class Navbar extends Component {
             >
               About me
             </NavLink>
-            {/* <NavLink
-              to={"/#experience"}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Experience
-            </NavLink> */}
             <NavLink
               to={"/certificate"}
               className={({ isActive }) => (isActive ? "active" : "")}

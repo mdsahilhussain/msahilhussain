@@ -120,29 +120,22 @@
 }
 
 @media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 576px) {
   .testimonial {
-    padding: 1.5rem 1.5rem;
-    height: 65vh;
+    margin: 18px 0;
+    padding: 1rem 3rem;
+    height: fit-content;
   }
 
   .testimonial___heading--line1 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .testimonial___heading h1 {
-    position: relative;
-    font-size: 34px;
-  }
-
-  .testimonial___card {
-    width: 90vw;
+    font-size: 38px;
   }
 
   .arrow {
-    bottom: -30px;
+    bottom: 0px;
     font-size: 18px;
   }
 
@@ -157,35 +150,87 @@
   .testimonial___card--height {
     height: 100%;
   }
+
   .testimonial___card--contant {
     padding: 0.5rem;
-    height: 100%;
-    flex-direction: column;
   }
 
   .testimonial___card--contant___image {
-    width: 50%;
-    height: 100%;
+    width: 60%;
     z-index: 10;
   }
 
   .testimonial___card--contant___image > img {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
 
   .testimonial___card--contant___detailcard {
     padding: 0rem 0rem;
     width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .testimonial___card--contant___detail {
+    padding: 1rem;
+  }
+  .testimonial___card--contant___detail h3 {
+    font-size: 18px;
+  }
+  .testimonial___card--contant___detail h4 {
+    font-size: 14px;
+  }
+  .testimonial___card--contant___detail p {
+    margin: 10px 0 18px 0;
+    line-height: 1.5;
+    font-size: 10px;
+  }
+
+  .testimonial___card--contant___detail--icon a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .testimonial {
+    margin-top: 10%;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .testimonial___heading--line1 {
+    font-size: 16px;
+  }
+
+  .testimonial___heading h1 {
+    position: relative;
+    font-size: 34px;
+  }
+
+  .testimonial___card {
+    width: 90vw;
+  }
+
+  .arrow {
+    bottom: -30px;
+  }
+
+  .testimonial___card--contant {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .testimonial___card--contant___image {
+    height: 100%;
+  }
+
+  .testimonial___card--contant___detailcard {
     margin-top: -5rem;
-    height: fit-content;
     border-radius: 8px;
   }
 
   .testimonial___card--contant___detail {
     margin-top: 5rem;
-    padding: 1rem;
   }
   .testimonial___card--contant___detail h3 {
     font-size: 16px;
@@ -194,13 +239,10 @@
     font-size: 12px;
   }
   .testimonial___card--contant___detail p {
-    margin: 10px 0 18px 0;
-    line-height: 1.5;
     font-size: 9px;
   }
 
   .testimonial___card--contant___detail--icon a {
     font-size: 1rem;
   }
-
 }

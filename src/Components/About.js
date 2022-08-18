@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 
 import { Education, Introdution, Skills } from "../aboutContent";
@@ -11,7 +11,23 @@ import svgShapOne from "../Assets/svgShapOne.png";
 function About() {
   let [perams, setPerams] = useState("addVideo");
   let [subtitle, setSubtitle] = useState("");
-  console.log(perams);
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+      console.log("moblie");
+    } else {
+      setIsMobile(false);
+      console.log("non-moblie");
+    }
+  };
+
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="about">
@@ -52,7 +68,7 @@ function About() {
         </div>
       </div>
       {perams === "addVideo" ? (
-        <div className="about___contantOne">
+        <div className="about___contantOne ">
           <img
             src={circleShapThree}
             className="about___contantOne--image1"
@@ -73,24 +89,38 @@ function About() {
             className="about___contantOne--image4"
             alt="svgShapOne"
           />
-          <div className="about___contantOne--video">
-            <video width="100%" height="100%" controls>
-              <source
-                src="https://drive.google.com/uc?export=view&id=1ajbcjzA5sZQS0zzkdX873L8EB1W3wKVO"
-                type="video/mp4"
-              />
-            </video>
-          </div>
+          {isMobile ? (
+            <div className="isMobileVideo">
+              <video width="100%" height="100%" controls>
+                <source
+                  src="https://drive.google.com/uc?export=view&id=1nIvT5zgRirSMAZYoTctMilLh5vy5t96v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          ) : undefined}
+          {isMobile ? undefined : (
+            <div className="about___contantOne--video">
+              <video width="100%" height="100%" controls>
+                <source
+                  src="https://drive.google.com/uc?export=view&id=1ajbcjzA5sZQS0zzkdX873L8EB1W3wKVO"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          )}
         </div>
       ) : (
-        <div className="about___contantTwo">
+        <div className="about___contantTwo ">
           <div className="about___contantTwo--video">
-            <video width="100%" height="100%" controls>
-              <source
-                src="https://drive.google.com/uc?export=view&id=1nIvT5zgRirSMAZYoTctMilLh5vy5t96v"
-                type="video/mp4"
-              />
-            </video>
+            {isMobile ? undefined : (
+              <video width="100%" height="100%" controls>
+                <source
+                  src="https://drive.google.com/uc?export=view&id=1nIvT5zgRirSMAZYoTctMilLh5vy5t96v"
+                  type="video/mp4"
+                />
+              </video>
+            )}
           </div>
           <div className="about___contantTwo--components">
             <Routes>

@@ -112,17 +112,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 576px) {
   .highLight {
-    margin-top: 10px;
-    padding: 1rem 1.5rem;
+    margin-top: 0px;
+    padding: 1rem 3rem;
   }
 
   .highLight___cardSection {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .highLight___cardSection--card i {
@@ -165,14 +162,14 @@
 
   .highLight___detailSection {
     margin-top: 2rem;
-    flex-direction: column-reverse;
     align-items: center;
-    justify-content: none;
+    justify-content: space-between;
   }
 
   .highLight___detailSection--numberFiger {
-    width: 100%;
-    flex-direction: row;
+    width: 30%;
+    flex-direction: column;
+    margin-right: 15px;
   }
 
   .highLight___detailSection--numberFiger h1 {
@@ -195,5 +192,25 @@
   }
   .highLight___detailSection--line p:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .highLight {
+    margin-top: 10px;
+    padding: 1rem 1.5rem;
+  }
+
+  .highLight___cardSection {
+    gap: 1rem;
+  }
+
+  .highLight___detailSection {
+    flex-direction: column-reverse;
+  }
+
+  .highLight___detailSection--numberFiger {
+    width: 100%;
+    flex-direction: row;
   }
 }

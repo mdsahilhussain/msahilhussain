@@ -66,17 +66,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 576px) {
   .footer {
     padding: 3rem 1.5rem 1rem 1.5rem;
   }
 
   .footer--boday {
-    display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .footer___imge {
@@ -88,10 +84,33 @@
   }
 
   .footer___importantLinks {
-    display: flex;
-    
+    flex-direction: row;
+  }
+
+  .footer___importantLinks ul:first-child {
+    margin-right: 5vw;
+  }
+
+  .footer___soicalLinks {
+    margin-top: 0px;
+  }
+
+  .socialIcon i {
+    font-size: 24px;
+  }
+
+  .footer__lower {
+    padding: 2rem 0rem 0rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer--boday {
     flex-direction: column;
-    /* align-items: center; */
+  }
+
+  .footer___importantLinks {
+    flex-direction: column;
   }
   .footer___importantLinks ul{
     margin-top: 18px;
@@ -100,24 +119,11 @@
     margin-right: 0vw;
   }
 
-  .footer___importantLinks li {
-    margin-bottom: 18px;
-  }
-
   .footer___importantLinks li:last-child {
     margin-bottom: 0px;
   }
   .footer___soicalLinks {
     margin-top: 24px;
-  }
-  .footer___soicalLinks ul {
-    margin-bottom: 18px;
-  }
-
-  .footer___soicalLinks ul:last-child {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
   }
 
   .footer___soicalLinks a {
@@ -125,25 +131,10 @@
   }
 
   .socialIcon i {
-    cursor: pointer;
     font-size: 18px;
-    color: var(--primary-color);
-    transition: all 0.3s linear;
-  }
-
-  .socialIcon i:hover {
-    color: var(--hoverColor1);
   }
 
   .footer__lower {
-    padding: 2rem 0rem 0rem 0rem;
     text-align: left;
-  }
-
-  .footer__lower p {
-    text-transform: lowercase;
-    opacity: 100%;
-    padding-top: 1rem;
-    border-top: 2px solid var(--bg-color);
   }
 }

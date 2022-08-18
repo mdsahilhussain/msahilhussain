@@ -23,7 +23,7 @@ export default class Introdution extends Component {
   ];
   projectNumber = [
     {
-      num: "500+",
+      num: "700+",
       topic: "DSA problem solve",
     },
     {
@@ -74,7 +74,6 @@ export default class Introdution extends Component {
                 <h2 className="flicker-4">{item.num}</h2>
                 <p>
                   {item.topic}
-                  {""}
                   <i className="fa-solid fa-check introduction___numberFiger--check"></i>
                 </p>
               </li>
