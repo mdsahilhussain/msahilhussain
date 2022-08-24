@@ -1,13 +1,18 @@
-import React from "react";
-import { portfolioData } from "./portfolioData";
+import React, { useState } from "react";
+import { appData } from "./appData";
+import { webData } from "./webData";
+import { webDevData } from "./wedDevData";
 
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./portfolio.css";
 
 import projectHeaderImage from "../../Assets/projectHerderimage.png";
+import AllWorks from "./AllWorks";
 function Portfolio() {
-  const data = portfolioData;
+  const [all, setAll] = useState("allProject");
+  const [data,setData] =useState()
+
   return (
     <>
       <header className="portfolio">
@@ -36,66 +41,66 @@ function Portfolio() {
             </h1>
           </div>
           <div className="portfolio____gallery___heading--links">
-            <NavLink
-              to={"introdution"}
-              onClick={""}
-              className={({ isActive }) => (isActive ? "aboutactive" : "")}
+            < button
+              onClick={(e)=>setAll('allProject')}
             >
               All project
-            </NavLink>
-            <NavLink
-              to={"skills"}
-              onClick={""}
-              className={({ isActive }) => (isActive ? "aboutactive" : "")}
+            </ button>
+            < button
+              onClick={(e)=>{setAll('individual'); setData(appData)}}
             >
               Mobile Desgin
-            </NavLink>
-            <NavLink
-              to={"qualification"}
-              onClick={""}
-              className={({ isActive }) => (isActive ? "aboutactive" : "")}
+            </ button>
+            < button
+              onClick={(e)=>{setAll('individual'); setData(webData)}}
             >
               Web Desgin
-            </NavLink>
-            <NavLink
-              to={"qualification"}
-              onClick={""}
-              className={({ isActive }) => (isActive ? "aboutactive" : "")}
+            </ button>
+            < button
+              onClick={(e)=>{setAll('individual'); setData(webDevData)}}
             >
               Fornt-End Devlopement
-            </NavLink>
+            </ button>
           </div>
         </div>
-        <div className="portfolio____gallery--cardSection">
-          {data.map((item, index) => {
-            return (
-              <div
-                key={index}
-                // data-aos-easing="linear"
-                // data-aos="fade-up"
-                className="portfolio____gallery--cardSection___card"
-                style={{
-                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${item.bgImgURL})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div className="portfolio____gallery--cardSection___card--detail">
-                  <div className="portfolio____gallery--cardSection___card--detail___text">
-                    <div>
-                      <h4>{item.name}</h4>
-                      <p>hello</p>
+        {all ==='allProject' ? (
+          <div className="portfolio____gallery--cardSectionII">
+            <AllWorks />
+          </div>
+        ) : (
+          <div className="portfolio____gallery--cardSection">
+            {data.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  // data-aos-easing="linear"
+                  // data-aos="fade-up"
+                  className="portfolio____gallery--cardSection___card"
+                  style={{
+                    backgroundImage: `url(https://drive.google.com/uc?export=view&id=${item.bgImgURL})`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundColor:"#E9E9E9"
+                  }}
+                >
+                  <div className="portfolio____gallery--cardSection___card--detail">
+                    <div className="portfolio____gallery--cardSection___card--detail___text">
+                      <div>
+                        <p>{item.data}</p>
+                        <h4>{item.name}</h4>
+                        <p>hello</p>
+                      </div>
+                      <Link target="_blank" rel="noreferrer" to={item.url}>
+                        <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                      </Link>
                     </div>
-                    <Link target="_blank" rel="noreferrer" to={item.url}>
-                      <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
-                    </Link>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </section>
     </>
   );

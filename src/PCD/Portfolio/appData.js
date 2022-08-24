@@ -1,18 +1,4 @@
-export const portfolioData = [
-  {
-    uid: "photography",
-    name: "Photogarphy",
-    date: "",
-    url: "/photogallery",
-    bgImgURL: "10F1x-B3rGgAuscJR6MO7IjN2q477H0ih",
-  },
-  {
-    uid: "painting",
-    name: "Painting",
-    date: "",
-    url: "/artgallery",
-    bgImgURL: "1ZZNrwRbFJpInuNrNuXNZ-g06rNSk5M5F",
-  },
+export const appData = [
   {
     uid: "app",
     name: "MindZenx",

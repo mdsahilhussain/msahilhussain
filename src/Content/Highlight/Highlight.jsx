@@ -105,10 +105,10 @@ export default class Highlight extends Component {
             >
               What do I help ?<hr />{" "}
             </h1>
-            {this.detailLine.map((line) => {
+            {this.detailLine.map((line, index) => {
               return (
                 <p
-                  key={line.id}
+                  key={index}
                   data-aos="fade-up"
                   // data-aos-offset="200"
                   data-aos-delay={line.delay}

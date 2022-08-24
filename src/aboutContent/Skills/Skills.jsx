@@ -40,7 +40,7 @@ export default class Skills extends Component {
                       <li key={index}>
                         <img
                           src={`https://drive.google.com/uc?export=view&id=${subItem.skill}`}
-                          alt={``}
+                          alt={`skill set images`}
                         />
                       </li>
                     );
@@ -55,7 +55,7 @@ export default class Skills extends Component {
                       <li key={index}>
                         <img
                           src={`https://drive.google.com/uc?export=view&id=${subItemII.tool}`}
-                          alt={``}
+                          alt={`tools set images`}
                         />
                       </li>
                     );

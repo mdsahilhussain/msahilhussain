@@ -19,6 +19,7 @@ export default class Certfication extends Component {
                     <img
                       src={`https://drive.google.com/uc?export=view&id=${item.imageURL}`}
                       alt=""
+                      style={{ backgroundColor: "#E9E9E9" }}
                     />
                   </LoadingProvider>
                 </div>
