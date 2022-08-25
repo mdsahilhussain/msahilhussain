@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <LoadingProvider>
-        <Navbar />
+        <Navbar style={{zIndex:"999"}} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about/*" element={<About />} />

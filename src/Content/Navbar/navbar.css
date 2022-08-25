@@ -2,6 +2,7 @@
 
 nav {
   padding: 1rem 3rem;
+  position: relative;
 }
 .navbar {
   align-items: center;
@@ -52,7 +53,9 @@ a.activeForMobile {
 }
 
 .navbar___mobile {
+
   display: none;
+
 }
 .navbar___mobile___img {
   display: flex;
@@ -71,10 +74,11 @@ a.activeForMobile {
 
 .navbar___mobile--linkList {
   background-color: var(--hoverColor1);
-  width: 100%;
+  width: 88%;
   height: 100vh;
   text-align: center;
-  position: relative;
+  position: absolute;
+  z-index: 999;
 }
 .navbar___mobile--linkList ul {
   position: absolute;
@@ -92,6 +96,7 @@ a.activeForMobile {
   transition: all 0.3s ease-in-out;
   margin-bottom: 18px;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .navbar {

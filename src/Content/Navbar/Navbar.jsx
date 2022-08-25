@@ -23,9 +23,9 @@ export default class Navbar extends Component {
               <img src={Logo} alt="logoIMG" />
             </NavLink>
             {this.state.mobileNavbar ? (
-              <i class="fa-solid fa-xmark" onClick={this.mobileNavbarShow}></i>
+              <i className="fa-solid fa-xmark" onClick={this.mobileNavbarShow}></i>
             ) : (
-              <i class="fa-solid fa-bars" onClick={this.mobileNavbarShow}></i>
+              <i className="fa-solid fa-bars" onClick={this.mobileNavbarShow}></i>
             )}
           </div>
           <div
@@ -61,6 +61,16 @@ export default class Navbar extends Component {
                   onClick={this.mobileNavbarShow}
                 >
                   Project
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/contact"}
+                  state={{ params: "addVideo", subTitle: "activeForMobile" }}
+                  className={({ isActive }) => (isActive ? "" : "")}
+                  onClick={this.mobileNavbarShow}
+                >
+                  Say Hii..
                 </NavLink>
               </li>
             </ul>

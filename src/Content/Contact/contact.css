@@ -139,8 +139,6 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 576px) {
-  @import "../../App.css";
-
   .contact {
     padding: 1rem 1.5rem;
     height: 40vh;
@@ -183,6 +181,9 @@ input[type="submit"]:hover {
     margin-bottom: 18px;
     margin-top: -30px;
   }
+  .contact___detail--cardTwo h3{
+    font-size: 18px;
+  }
 
   .contact___detail--cardTwo___header span {
     color: var(--hoverColor1);
@@ -202,7 +203,7 @@ input[type="submit"]:hover {
     font-family: "Rubik", sans-serif;
     font-weight: 300;
     opacity: 75%;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .contact___detail--cardTwo___header li {

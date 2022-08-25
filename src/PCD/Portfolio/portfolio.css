@@ -84,7 +84,7 @@ section {
   color: var(--hoverColor1);
 }
 
-a.aboutactive {
+.aboutactive {
   color: var(--hoverColor1);
 }
 
@@ -107,7 +107,6 @@ a.aboutactive {
   border-radius: 15px;
   height: 40vh;
   margin-bottom: 20px;
-  
 }
 
 .portfolio____gallery--cardSection___cardII:last-child {
@@ -141,21 +140,27 @@ a.aboutactive {
 }
 
 .portfolio____gallery--cardSection___card--detail___text a,
-.portfolio____gallery--cardSection___card--detail___textII a {
+.portfolio____gallery--cardSection___card--detail___textII a,
+.portfolio____gallery--cardSection___card--detail___textII button {
   font-size: 16px;
   font-weight: 300;
   position: absolute;
   right: 3rem;
   cursor: pointer;
   outline: none;
+  background: none;
+  border: none;
   color: var(--text-color);
 }
 
-.portfolio____gallery--cardSection___card--detail___textII a {
+.portfolio____gallery--cardSection___card--detail___textII a,
+.portfolio____gallery--cardSection___card--detail___textII button {
   font-size: 24px;
 }
 
-.portfolio____gallery--cardSection___card--detail a:hover {
+.portfolio____gallery--cardSection___card--detail___text a:hover,
+.portfolio____gallery--cardSection___card--detail___textII a:hover,
+.portfolio____gallery--cardSection___card--detail___textII button:hover {
   color: var(--hoverColor3);
 }
 
@@ -194,21 +199,21 @@ a.aboutactive {
     font-size: 13px;
   }
 
-  .portfolio____gallery___heading--links {
+  .portfolio____gallery___heading--links button {
     font-size: 11px;
     font-weight: 400;
     text-decoration: underline;
   }
 
-  .portfolio____gallery___heading--links a {
+  .portfolio____gallery___heading--links button {
     margin-right: 10px;
   }
 
-  .portfolio____gallery___heading--links a:last-child {
+  .portfolio____gallery___heading--links button:last-child {
     margin-right: 0px;
   }
 
-  .portfolio____gallery___heading--links a:hover {
+  .portfolio____gallery___heading--links button:hover {
     color: var(--hoverColor1);
   }
 
@@ -225,24 +230,38 @@ a.aboutactive {
     border-radius: 8px;
     height: 10vh;
   }
+  .portfolio____gallery--cardSection___cardII {
+    border-radius: 8px;
+    height: 10vh;
+  }
 
   .portfolio____gallery--cardSection___card--detail {
     border-radius: 8px;
   }
 
-  .portfolio____gallery--cardSection___card--detail___text {
+  .portfolio____gallery--cardSection___card--detail___text,
+  .portfolio____gallery--cardSection___card--detail___textII {
     bottom: 11px;
     left: 11px;
   }
   .portfolio____gallery--cardSection___card--detail___text h4 {
     font-size: 13px;
   }
+
+  .portfolio____gallery--cardSection___card--detail___textII h1 {
+    font-size: 14px;
+  }
+  .portfolio____gallery--cardSection___card--detail___textII h5 {
+    font-size: 11px;
+  }
+
   .portfolio____gallery--cardSection___card--detail___text p {
     font-size: 10px;
   }
-  .portfolio____gallery--cardSection___card--detail___text a {
+  .portfolio____gallery--cardSection___card--detail___text a,
+  .portfolio____gallery--cardSection___card--detail___textII a,
+  .portfolio____gallery--cardSection___card--detail___textII button {
     font-size: 12px;
-
     right: 1.5rem;
   }
 }
