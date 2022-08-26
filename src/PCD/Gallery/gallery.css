@@ -42,4 +42,26 @@
   justify-content: space-between;
   align-items: center;
   height: 5vh;
+  color: var(--hoverColor1);
+}
+.gallery___slider--detail h5 {
+  color: var(--hoverColor1);
+}
+
+.gallery___slider--detail h5 span {
+  color: var(--text-color);
+}
+
+.gallery___slider--detail button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery___slider--detail button h5:last-child {
+  color: var(--text-color);
+}
+.gallery___slider--detail button h5:last-child:hover {
+  color: var(--hoverColor1);
 }

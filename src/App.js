@@ -7,22 +7,21 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 
 import { Footer, Navbar, Contact } from "./Content";
-import { Certfication, GalleryPG, GalleryPI, Portfolio } from "./PCD";
+import { Certfication, Gallery, Portfolio } from "./PCD";
 import { LoadingProvider } from "./Context/LoadingContext";
 
 function App() {
   return (
     <Router>
       <LoadingProvider>
-        <Navbar style={{zIndex:"999"}} />
+        <Navbar style={{ zIndex: "999" }} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about/*" element={<About />} />
           <Route path="/certificate" element={<Certfication />} />
           <Route path="/project" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/photogallery" element={<GalleryPG />} />
-          <Route path="/artgallery" element={<GalleryPI />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </LoadingProvider>

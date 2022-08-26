@@ -5,13 +5,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { photoData } from "./photoData";
+import { paintingData } from "./paintingData";
 
 import "./gallery.css";
 
-function GalleryPG() {
-  const Photogarphy = photoData;
+function Gallery() {
   const [currid, setCurrid] = useState(1);
-  // const [desc, setDesc] = useState("");
+  const currentValue = localStorage.getItem("name");
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    switch (currentValue) {
+      case "photoData":
+        return setData(photoData);
+      case "paintingData":
+        return setData(paintingData);
+      default:
+        return;
+    }
+  },[]);
 
   const SampleNextArrow = (props) => {
     const { onClick } = props;
@@ -37,10 +49,15 @@ function GalleryPG() {
     afterChange: (current) => setCurrid(current + 1),
   };
 
+  const close = () => {
+    window.top.close();
+    localStorage.clear();
+  };
+
   return (
     <div className="gallery">
       <Slider {...settings}>
-        {Photogarphy.map((item, index) => {
+        {data?.map((item, index) => {
           return (
             <>
               <div className="gallery___slider--image" key={index}>
@@ -56,12 +73,14 @@ function GalleryPG() {
       <div className="gallery___slider--detail">
         <h5>
           {currid}
-          <span>{`/${Photogarphy.length}`}</span>
+          <span>{`/${data?.length}`}</span>
         </h5>
-        <h5>Back</h5>
+        <button onClick={close}>
+          <h5>Back</h5>
+        </button>
       </div>
     </div>
   );
 }
 
-export default GalleryPG;
+export default Gallery;

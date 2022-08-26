@@ -52,6 +52,9 @@ function Portfolio() {
     }
   };
 
+  const store = (set) => {
+    localStorage.setItem('name', set)
+  };
   return (
     <>
       <header className="portfolio">
@@ -142,11 +145,12 @@ function Portfolio() {
                     <div className="portfolio____gallery--cardSection___card--detail___textII">
                       <div>
                         <p>{item.date}</p>
+
                         <h3>{item.name}</h3>
                         <h5>hello</h5>
                       </div>
                       {!item.set ? (
-                        <Link target="_blank" rel="noreferrer" to={item.url}>
+                        <Link  target="_blank" rel="noreferrer"  to={item.url} onClick={(e) => {active(item.num); store(item.element)}}>
                           <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
                         </Link>
                       ) : (
@@ -155,6 +159,7 @@ function Portfolio() {
                           onClick={(e) => {
                             setAll(item.set);
                             setData(item.url);
+                            active(item.num);
                           }}
                         >
                           <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
