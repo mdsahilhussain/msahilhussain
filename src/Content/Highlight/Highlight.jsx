@@ -50,11 +50,11 @@ export default class Highlight extends Component {
     return (
       <div className="highLight">
         <div className="highLight___cardSection">
-          {this.cardDetail.map((item) => {
+          {this.cardDetail.map((item, index) => {
             return (
               <div
+                key={index}
                 className="highLight___cardSection--card"
-                key={item.id}
                 data-aos="fade-up"
                 // data-aos-offset="200"
                 data-aos-delay={item.delay}

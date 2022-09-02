@@ -42,14 +42,12 @@
   justify-content: space-between;
   align-items: center;
   height: 5vh;
-  color: var(--hoverColor1);
-}
-.gallery___slider--detail h5 {
-  color: var(--hoverColor1);
+  color: var(--text-color);
 }
 
-.gallery___slider--detail h5 span {
-  color: var(--text-color);
+
+.gallery___slider--detail h5 span, .gallery___slider--detail h5 a {
+  color: var(--hoverColor1);
 }
 
 .gallery___slider--detail button {

@@ -23,7 +23,7 @@ function Gallery() {
       default:
         return;
     }
-  },[]);
+  }, [currentValue]);
 
   const SampleNextArrow = (props) => {
     const { onClick } = props;
@@ -59,21 +59,24 @@ function Gallery() {
       <Slider {...settings}>
         {data?.map((item, index) => {
           return (
-            <>
-              <div className="gallery___slider--image" key={index}>
+            <div key={index}>
+              <div className="gallery___slider--image" >
                 <img
                   src={`https://drive.google.com/uc?export=view&id=${item.imageURl}`}
                   alt=""
                 />
               </div>
-            </>
+            </div>
           );
         })}
       </Slider>
       <div className="gallery___slider--detail">
         <h5>
-          {currid}
-          <span>{`/${data?.length}`}</span>
+          <span>{currid}</span>
+          {`/${data?.length}`}
+        </h5>
+        <h5>
+          All photos are posted on <a href="https://instagram.com/creativecity_7?igshid=YmMyMTA2M2Y=">Instagram</a>.
         </h5>
         <button onClick={close}>
           <h5>Back</h5>

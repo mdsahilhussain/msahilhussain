@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 // *================================ use images ================================
 import headerImage from "../../Assets/headerImage.svg";
+// import pdf from '../../../public/msahilhussin_resmue.pdf'
 
 export default class Header extends Component {
   componentDidMount() {
@@ -53,8 +54,9 @@ export default class Header extends Component {
               ut mauris.
             </p>
             <div className="header___title-btn">
-              <Link
-                to={"/contact"}
+              <a
+                href="../../../public/msahilhussin_resmue.pdf"
+                download="msahilhussain_resume"
                 className="button_borders"
                 data-aos="fade-up"
                 // data-aos-offset="200"
@@ -62,9 +64,9 @@ export default class Header extends Component {
                 data-aos-easing="linear"
               >
                 <button className="primary_button">
-                  <i class="fa-solid fa-file-arrow-down"></i> Resume
+                  <i className="fa-solid fa-file-arrow-down"></i> Resume
                 </button>
-              </Link>
+              </a>
               <Link
                 to={"/contact"}
                 className="button_borders"

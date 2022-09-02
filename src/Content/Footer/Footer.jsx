@@ -32,7 +32,7 @@ export default class Footer extends Component {
                 </Link>
               </li>
               <li>
-                <Link target="_blank" rel="noreferrer" to={"*"}>
+                <Link target="_blank" rel="noreferrer" to={"https://msahilhussain.medium.com/"}>
                   <p>Blogs</p>
                 </Link>
               </li>

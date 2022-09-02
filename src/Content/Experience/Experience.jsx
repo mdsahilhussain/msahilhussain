@@ -75,7 +75,7 @@ export default class Experience extends Component {
                   >
                     <p>{item.duration}</p>
                     <span className="exerience___style__workingDetail--detail___icon">
-                      <i class="fa-solid fa-briefcase"></i>
+                      <i className="fa-solid fa-briefcase"></i>
                     </span>
                     <h4>{item.companeyName}</h4>
                     <h3>{item.jobTitle}</h3>
