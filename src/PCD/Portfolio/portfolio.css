@@ -28,7 +28,7 @@ section {
 .portfolio____gallery {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .portfolio____gallery___heading--line1 {
@@ -165,6 +165,66 @@ section {
 }
 
 @media only screen and (max-width: 1024px) {
+  .portfolio {
+    padding: 1rem 1.5rem;
+    height: fit-content;
+  }
+
+  .portfolio___detail {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .portfolio___image {
+    height: 450px;
+  }
+
+  .portfolio___image > img {
+    height: 100%;
+  }
+
+  section {
+    padding: 1rem 1.5rem;
+  }
+
+  .portfolio____gallery___heading--line1 {
+    font-size: 18px;
+  }
+
+  .portfolio____gallery___heading--links button {
+    font-size: 14px;
+  }
+  .portfolio____gallery___heading--links button {
+    margin-right: 10px;
+  }
+
+  .portfolio____gallery--cardSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio____gallery--cardSection___card,
+  .portfolio____gallery--cardSection___cardII {
+    border-radius: 8px;
+    height: 20vh;
+  }
+
+  .portfolio____gallery--cardSection___card--detail {
+    border-radius: 8px;
+  }
+
+  .portfolio____gallery--cardSection___card--detail___text,
+  .portfolio____gallery--cardSection___card--detail___textII {
+    bottom: 11px;
+    left: 11px;
+  }
+
+  .portfolio____gallery--cardSection___card--detail___text a,
+  .portfolio____gallery--cardSection___card--detail___textII a,
+  .portfolio____gallery--cardSection___card--detail___textII button {
+    font-size: 16px;
+    right: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -179,15 +239,8 @@ section {
   }
 
   .portfolio___image {
-    height: 80%;
-  }
-
-  .portfolio___image > img {
-    height: 100%;
-  }
-
-  section {
-    padding: 1rem 1.5rem;
+    margin-top: 18px;
+    width: 100%;
   }
 
   .portfolio____gallery {
@@ -196,21 +249,12 @@ section {
   }
 
   .portfolio____gallery___heading--line1 {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .portfolio____gallery___heading--links button {
     font-size: 11px;
-    font-weight: 400;
     text-decoration: underline;
-  }
-
-  .portfolio____gallery___heading--links button {
-    margin-right: 10px;
-  }
-
-  .portfolio____gallery___heading--links button:last-child {
-    margin-right: 0px;
   }
 
   .portfolio____gallery___heading--links button:hover {
@@ -221,29 +265,13 @@ section {
     color: var(--hoverColor1);
   }
 
-  .portfolio____gallery--cardSection {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
   .portfolio____gallery--cardSection___card {
-    border-radius: 8px;
     height: 10vh;
   }
   .portfolio____gallery--cardSection___cardII {
-    border-radius: 8px;
     height: 10vh;
   }
 
-  .portfolio____gallery--cardSection___card--detail {
-    border-radius: 8px;
-  }
-
-  .portfolio____gallery--cardSection___card--detail___text,
-  .portfolio____gallery--cardSection___card--detail___textII {
-    bottom: 11px;
-    left: 11px;
-  }
   .portfolio____gallery--cardSection___card--detail___text h4 {
     font-size: 13px;
   }
@@ -262,6 +290,5 @@ section {
   .portfolio____gallery--cardSection___card--detail___textII a,
   .portfolio____gallery--cardSection___card--detail___textII button {
     font-size: 12px;
-    right: 1.5rem;
   }
 }

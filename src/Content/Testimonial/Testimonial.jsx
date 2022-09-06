@@ -90,7 +90,7 @@ export default class Testimonial extends Component {
                               return (
                                 <a
                                   target="_blank"
-                                  rel="noreferrer"
+                                  rel="noreferrer" 
                                   href={subItem.Url}
                                   key={index}
                                 >

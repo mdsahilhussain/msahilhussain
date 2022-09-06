@@ -52,7 +52,7 @@ export default class Experience extends Component {
                 // data-aos-delay="50"
               />
               <Link
-                to=""
+                to="/contact"
                 className="experience___style___headlineSection--imgae2 pulsate-fwd"
               >
                 <img
@@ -89,6 +89,18 @@ export default class Experience extends Component {
                   </div>
                 );
               })}
+              <Link
+                to="/contact"
+                className="experience___style___workingDetail--imgae2 pulsate-fwd"
+              >
+                <img
+                  src={hireMe}
+                  alt="hireMeImage"
+                  data-aos="fade-up"
+                  // data-aos-offset="200"
+                  // data-aos-delay="50"
+                />
+              </Link>
             </div>
           </div>
         </div>

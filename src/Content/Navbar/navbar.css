@@ -53,9 +53,7 @@ a.activeForMobile {
 }
 
 .navbar___mobile {
-
   display: none;
-
 }
 .navbar___mobile___img {
   display: flex;
@@ -74,7 +72,6 @@ a.activeForMobile {
 
 .navbar___mobile--linkList {
   background-color: var(--hoverColor1);
-  width: 88%;
   height: 100vh;
   text-align: center;
   position: absolute;
@@ -97,8 +94,10 @@ a.activeForMobile {
   margin-bottom: 18px;
 }
 
-
 @media only screen and (max-width: 1024px) {
+  nav {
+    padding: 1.5rem 1.5rem;
+  }
   .navbar {
     display: none;
   }
@@ -106,11 +105,24 @@ a.activeForMobile {
   .navbar___mobile {
     display: block;
   }
+
+  .navbar___mobile--linkList {
+    width: 94%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-  nav {
-    padding: 1.5rem 1.5rem;
+  .navbar___mobile--linkList {
+    width: 88%;
+  }
+  .navbar___mobile___img i {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .navbar___mobile--linkList {
+    width: 85%;
   }
   .navbar___mobile___img i {
     font-size: 20px;

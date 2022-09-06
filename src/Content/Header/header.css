@@ -1,6 +1,7 @@
 @import "../../App.css";
 
 .headerBox {
+  height: fit-content;
   position: relative;
   padding: 1rem 3rem;
 }
@@ -82,30 +83,37 @@ header > .header___imgSection {
 
 @media only screen and (max-width: 1024px) {
   .headerBox {
-    position: static;
+    position: relative;
+    padding: 1rem 1.5rem;
   }
   header {
-    flex-direction: column;
     justify-content: none;
     margin-top: 0px;
-    height: 90vh;
+    height: fit-content;
   }
   .header___title {
     margin-left: 0;
     width: 100%;
   }
 
-  .header___title {
-    margin-left: 0;
-    width: 100%;
+  .header___title h2 {
+    font-size: 28px;
   }
 
   .header___title span {
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+
+  .header___title p {
+    font-size: 12px;
   }
 
   .header___title-btn {
     margin-top: 20px;
+  }
+  .primary_button {
+    font-size: 13px;
+    padding: 0.4rem 1rem;
   }
   .header__title--socialLink {
     bottom: 3%;
@@ -116,11 +124,11 @@ header > .header___imgSection {
   }
 
   .header__title--socialLink i {
-    font-size: 24px;
+    font-size: 18px;
   }
   header > .header___imgSection {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 90%;
   }
 
   .header___imgSection > img {
@@ -134,16 +142,22 @@ header > .header___imgSection {
     padding: 1rem 1.5rem;
   }
   header {
+    flex-direction: column;
     height: fit-content;
   }
 
-  .header___title span {
-    font-size: 2.5rem;
+  .header___title h2 {
+    font-size: 18px;
   }
 
-  .header___title-btn {
-    margin-top: 20px;
+  .header___title span {
+    font-size: 1.8rem;
   }
+
+  .header___title p {
+    font-size: 12px;
+  }
+
   header > .header___imgSection {
     margin-top: 18px;
     height: 100%;
@@ -151,32 +165,9 @@ header > .header___imgSection {
   }
 
   .header__title--socialLink {
-    bottom: 15%;
+    bottom: 0;
   }
   .header__title--socialLink i {
     font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .header__title--socialLink {
-    bottom: 13%;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .header__title--socialLink {
-    bottom: -19%;
-  }
-}
-
-@media only screen and (max-width: 361px) {
-  .header__title--socialLink {
-    bottom: -21%;
-  }
-}
-@media  (max-width: 360px) and (max-height: 741px) {
-  .header__title--socialLink {
-    bottom: -7%;
   }
 }

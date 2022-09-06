@@ -47,7 +47,7 @@
   right: 20%;
   bottom: 0;
   position: absolute;
-  height: 85%;
+  height: 80%;
 }
 
 .experience___style___headlineSection--imgae2 {
@@ -69,6 +69,19 @@
   padding: 2rem 3rem;
   border-radius: 20px;
   height: fit-content;
+  position: relative;
+}
+.experience___style___workingDetail--imgae2 {
+  padding: 1rem;
+  bottom: -10%;
+  right: -10%;
+  position: absolute;
+  height: fit-content;
+  border-radius: 50%;
+  display: none;
+}
+.experience___style___workingDetail--imgae2 > img {
+  height: 100%;
 }
 
 .exerience___style__workingDetail--detail {
@@ -116,7 +129,7 @@
 
 @media only screen and (max-width: 1024px) {
   .experience {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
     margin-top: 0px;
   }
 
@@ -129,11 +142,14 @@
   }
 
   .experience___style___headlineSection--imgae1 {
-    right:0;
+    right: 0;
+  }
+  .experience___style___headlineSection--imgae2 {
+    height: fit-content;
   }
 
   .experience___style___headlineSection--imgae2 > img {
-    height: 70%;
+    height: 100%;
   }
 
   .experience___style___workingDetail {
@@ -174,7 +190,7 @@
   .experience___style {
     flex-direction: column;
   }
-  
+
   .experience___style___headlineSection--line1 {
     font-size: 16px;
   }
@@ -184,9 +200,11 @@
   }
 
   .experience___style___headlineSection--imgae2 {
-    bottom: -90vh;
-    right: -5%;
-    height: 80px;
+    display: none;
+  }
+
+  .experience___style___workingDetail--imgae2 {
+    display: block;
   }
 
   .experience___style___headlineSection--imgae2 > img {
@@ -203,34 +221,5 @@
 
   .exerience___style__workingDetail--detail ul {
     font-size: 9px;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .experience___style___headlineSection--imgae2 {
-    bottom: -85vh;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .experience___style___headlineSection--imgae2 {
-    bottom: -90vh;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .experience___style___headlineSection--imgae2 {
-    bottom: -122vh;
-  }
-}
-
-@media only screen and (max-width: 361px) {
-  .experience___style___headlineSection--imgae2 {
-    bottom: -128vh;
-  }
-}
-
-@media only screen and (max-height: 741px) {
-  .experience___style___headlineSection--imgae2 {
-    bottom: -110vh;
   }
 }

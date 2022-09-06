@@ -114,17 +114,25 @@
 @media only screen and (max-width: 1024px) {
   .highLight {
     margin-top: 0px;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
   }
 
   .highLight___cardSection {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .highLight___cardSection--card i {
     border-radius: 8px;
-    font-size: 28px;
+    font-size: 18px;
+    padding: 0.8rem;
+  }
+
+  .highLight___cardSection--card h4 {
+    font-size: 16px;
+  }
+
+  .highLight___cardSection--card p {
+    font-size: 13px;
   }
 
   .highLight___cardSection--card {
@@ -167,18 +175,12 @@
   }
 
   .highLight___detailSection--numberFiger {
-    width: 30%;
-    flex-direction: column;
     margin-right: 15px;
   }
 
   .highLight___detailSection--numberFiger h1 {
     font-size: 5rem;
     margin-bottom: -1rem;
-  }
-
-  .highLight___detailSection--line {
-    width: 100%;
   }
 
   .highLight___detailSection--line h1 {
@@ -197,11 +199,11 @@
 
 @media only screen and (max-width: 576px) {
   .highLight {
-    margin-top: 10px;
-    padding: 1rem 1.5rem;
+    margin-top: 0px;
   }
 
   .highLight___cardSection {
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
 
@@ -212,5 +214,12 @@
   .highLight___detailSection--numberFiger {
     width: 100%;
     flex-direction: row;
+  }
+  .highLight___detailSection--numberFiger h1 {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+  }
+  .highLight___detailSection--line {
+    width: 100%;
   }
 }
