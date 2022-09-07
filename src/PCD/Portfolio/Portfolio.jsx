@@ -33,7 +33,7 @@ function Portfolio() {
           setActive_three(false),
           setActive_four(false)
         );
-        
+
       case 3:
         return (
           setActive_one(false),
@@ -54,7 +54,7 @@ function Portfolio() {
   };
 
   const store = (set) => {
-    localStorage.setItem('name', set)
+    localStorage.setItem("name", set);
   };
   return (
     <>
@@ -151,7 +151,15 @@ function Portfolio() {
                         <h5>hello</h5>
                       </div>
                       {!item.set ? (
-                        <Link  target="_blank" rel="noreferrer"  to={item.url} onClick={(e) => {active(item.num); store(item.element)}}>
+                        <Link
+                          target="_blank"
+                          rel="noreferrer"
+                          to={item.url}
+                          onClick={(e) => {
+                            active(item.num);
+                            store(item.element);
+                          }}
+                        >
                           <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
                         </Link>
                       ) : (
@@ -196,9 +204,19 @@ function Portfolio() {
                         <h4>{item.name}</h4>
                         <p>hello</p>
                       </div>
-                      <Link target="_blank" rel="noreferrer" to={item.url}>
-                        <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
-                      </Link>
+                      {item.url ? (
+                        <a target="_blank" rel="noreferrer" href={item.url}>
+                          <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                        </a>
+                      ) : (
+                        <button
+                          target="_blank"
+                          rel="noreferrer"
+                          style={{ cursor: "no-drop" }}
+                        >
+                          <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>

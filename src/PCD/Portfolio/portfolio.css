@@ -140,6 +140,7 @@ section {
 }
 
 .portfolio____gallery--cardSection___card--detail___text a,
+.portfolio____gallery--cardSection___card--detail___text button,
 .portfolio____gallery--cardSection___card--detail___textII a,
 .portfolio____gallery--cardSection___card--detail___textII button {
   font-size: 16px;
@@ -159,6 +160,7 @@ section {
 }
 
 .portfolio____gallery--cardSection___card--detail___text a:hover,
+.portfolio____gallery--cardSection___card--detail___text button:hover,
 .portfolio____gallery--cardSection___card--detail___textII a:hover,
 .portfolio____gallery--cardSection___card--detail___textII button:hover {
   color: var(--hoverColor3);
@@ -221,7 +223,8 @@ section {
 
   .portfolio____gallery--cardSection___card--detail___text a,
   .portfolio____gallery--cardSection___card--detail___textII a,
-  .portfolio____gallery--cardSection___card--detail___textII button {
+  .portfolio____gallery--cardSection___card--detail___textII button,
+  .portfolio____gallery--cardSection___card--detail___text button {
     font-size: 16px;
     right: 1.5rem;
   }

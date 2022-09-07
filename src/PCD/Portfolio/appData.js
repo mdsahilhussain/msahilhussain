@@ -5,6 +5,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1iwdcIovbviiaydPc0Hyf57h8ltlBiSoa",
+    descr: "",
   },
   {
     uid: "app",
@@ -12,13 +13,15 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1bkoKtagTw19OHO2ZEXPE4UMjptT06wde",
+    descr: "",
   },
   {
     uid: "app",
     name: "Collab",
     date: "",
-    url: "",
+    url: "https://www.behance.net/gallery/127718755/Collab/modules/724537983",
     bgImgURL: "1Q6iRZRknM1Mr37tNTe-nz6qd0iHSgCh5",
+    descr: "",
   },
   {
     uid: "app",
@@ -26,6 +29,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1W6qyiPM-Glw0kVw_Dw6mn02trABspDzK",
+    descr: "",
   },
   {
     uid: "app",
@@ -33,6 +37,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "15p6LkdocMhfBBjyJivhemkW7SyoOfFch",
+    descr: "",
   },
   {
     uid: "app",
@@ -40,6 +45,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1ES1hjP0v_MGKQ4OFwPFr85ivWQ7C6Tsy",
+    descr: "",
   },
 
   { 
@@ -48,6 +54,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1P3OVPs39OBv6DAHnj32tGrQipwwuLem0",
+    descr: "",
   },
   {
     uid: "app",
@@ -55,6 +62,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1I_RcHqIxhvar-j2um4CnZmBeWvJXCHbM",
+    descr: "",
   },
   {
     uid: "app",
@@ -62,6 +70,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1RH3NyLAyDdDmnhx9zg5WumA4ki5BFYpA",
+    descr: "",
   },
   {
     uid: "app",
@@ -69,13 +78,15 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1nXN3jhC1goDu8PvqzDHyUaSLWVrwP7d3",
+    descr: "",
   },
   {
     uid: "app",
     name: "Apple store",
     date: "",
-    url: "",
+    url: "https://www.behance.net/gallery/123172543/Apple-Store/modules/700205881",
     bgImgURL: "1hB3m3czy7l3taGNJmWDhFo8TXQwIIZep",
+    descr: "",
   },
   {
     uid: "app",
@@ -83,6 +94,7 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "14qdrQjr2vKm-MTopOY_szCEj6fLYgeQ4",
+    descr: "",
   },
   {
     uid: "app",
@@ -90,5 +102,6 @@ export const appData = [
     date: "",
     url: "",
     bgImgURL: "1yT6ljnQKSoAIaWZw4UDu_GebPbpBg_N9",
+    descr: "",
   },
 ];

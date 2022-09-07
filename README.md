@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Movies App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the journey of learning to react js, this is my first project named the Movies app. This Application shows the list of Hollywood films
 
-## Available Scripts
+## Screenshot 📷
 
-In the project directory, you can run:
+<p align="center">
+   <a href="https://hollywoodmoviesapp.netlify.app/" target="_blank">
+    <img width="80%" height="100%" src="https://user-images.githubusercontent.com/70509500/172795710-5a9a67f5-eebb-4761-a953-d8df809521a5.png" alt="logo">
+  </a>
+</p>
 
-### `npm start`
+## Description 📚
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After making this application. I learned in-depth bootstrap, Lifecycle Methods, API calls, Windows Storage, Router, Adding, Deleting, Sorting, Searching, Filtering, and Pagination in React js.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Core features manifested by is app 📚
 
-### `npm test`
+- Add your Favorite movie from storage.
+- Removing your Favorite movie from storage.
+- Searching your specific movies
+- Sorting movies by rank, most view.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies, libraries, and frameworks
 
-### `npm run build`
+Bootstrap: for building app responsive.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⚛️ React js : for building user interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Lifecycle methods in class components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- API calls thoroug axois.
 
-### `npm run eject`
+- windows Storage like localStorage, sessionStorage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- .map method, .filter method
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React Router Dom: for navigating one page to another page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installing 💻
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+How download all dependencies
 
-## Learn More
+```
+$ npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Executing program
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- How to run the program
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+$ npm start
+```
