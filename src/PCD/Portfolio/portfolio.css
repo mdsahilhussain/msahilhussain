@@ -208,6 +208,11 @@ section {
   .portfolio____gallery--cardSection___card,
   .portfolio____gallery--cardSection___cardII {
     border-radius: 8px;
+    height: 15vh;
+  }
+
+  
+  .portfolio____gallery--cardSection___cardII {
     height: 20vh;
   }
 

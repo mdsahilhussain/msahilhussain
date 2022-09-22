@@ -209,11 +209,7 @@ function Portfolio() {
                           <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
                         </a>
                       ) : (
-                        <button
-                          target="_blank"
-                          rel="noreferrer"
-                          style={{ cursor: "no-drop" }}
-                        >
+                        <button style={{ cursor: "no-drop" }}>
                           <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
                         </button>
                       )}

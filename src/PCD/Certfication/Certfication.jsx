@@ -26,7 +26,18 @@ export default class Certfication extends Component {
                 <br />
                 <div className="certification___body--detail">
                   <div className="certification___body--detail__content">
-                    <h2 className="">{item.headLine}</h2>
+                    <h3 className="">
+                      {item.headLine}
+                      {item.url ? (
+                        <a target="_blank" rel="noreferrer" href={item.url}>
+                          <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                        </a>
+                      ) : (
+                        <button style={{ cursor: "no-drop" }}>
+                          <i className="fa-solid fa-arrow-up-right-from-square pulsate-fwd "></i>
+                        </button>
+                      )}
+                    </h3>
                     <hr />
                     <p>{item.decr}</p>
                   </div>
