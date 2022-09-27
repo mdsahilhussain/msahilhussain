@@ -1,41 +1,45 @@
-# Movies App
+# M SAHIL HUSSAIN
 
-In the journey of learning to react js, this is my first project named the Movies app. This Application shows the list of Hollywood films
+A **Portfolio** website which **features my skills and projects**.
 
+# [ IF YOU LIKE MY WEBSITE DON'T FORGET TO GIVE A START AND YOU CAN ALSO FORK THE APP. ]
 ## Screenshot 📷
 
 <p align="center">
    <a href="https://hollywoodmoviesapp.netlify.app/" target="_blank">
-    <img width="80%" height="100%" src="https://user-images.githubusercontent.com/70509500/172795710-5a9a67f5-eebb-4761-a953-d8df809521a5.png" alt="logo">
+    <img width="80%" height="100%" src="https://drive.google.com/file/d/1I0_iYEkTB6iieTSnugM7Pjtt-pKpTbtj/view?usp=sharing" alt="logo">
   </a>
 </p>
 
-## Description 📚
-
-After making this application. I learned in-depth bootstrap, Lifecycle Methods, API calls, Windows Storage, Router, Adding, Deleting, Sorting, Searching, Filtering, and Pagination in React js.
-
 ## Core features manifested by is app 📚
 
-- Add your Favorite movie from storage.
-- Removing your Favorite movie from storage.
-- Searching your specific movies
-- Sorting movies by rank, most view.
+- Woking History.
+- Seleted Project in different categories.
+- Testimonial - People Talk About Me.
+- Certificate - showing my all certificate.
+- About me - INTRODUCTION | SKILLS SET | QUALIFICATION
+- Contact us
 
 ## Technologies, libraries, and frameworks
 
 Bootstrap: for building app responsive.
 
-⚛️ React js : for building user interface
+=> React js : for building user interface
 
 - Lifecycle methods in class components.
 
-- API calls thoroug axois.
+- managing state and props.
 
 - windows Storage like localStorage, sessionStorage.
 
-- .map method, .filter method
+- .map method.
 
-React Router Dom: for navigating one page to another page.
+=> React Router Dom: for navigating one page to another page.
+
+=> Animate On Scroll (AOS) library use to animate elements as you scroll down and up.
+
+=> EmailJS library use to send emails using only client-side technologies
+
 
 ### Installing 💻
 
@@ -46,9 +50,7 @@ $ npm install
 ```
 
 ### Executing program
-
 - How to run the program
-
 ```
 $ npm start
 ```
