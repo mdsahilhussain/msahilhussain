@@ -14,18 +14,14 @@ export default class Skills extends Component {
       <div className="skills">
         <h3>My Specialty in</h3>
         <p>
-          {/* 
-          //TODO : Writeing Specialty description============================================
-          */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-          pellentesque dui dui, phasellus vestibulum consequat odio sociis. Ac
-          vel sed viverra ornare placerat vitae egestas ut sit. Feugiat metus
-          vel pharetra facilisi posuere. Accumsan porttitor amet enim, ut
-          mauris.
+          As an analogy to my degree, I have completed Front-End Development and
+          UI and UX Design courses on different learning platforms, along with
+          some related projects. I work on these technologies as part of my tech
+          stack
         </p>
         <div className="skills___cardBox">
           {list.map((item, index) => {
-            return (
+            return (                                 
               <div className="skills___cardBox___card" key={index}>
                 <h4>
                   <i className={item.icon}></i> {item.skillsName}

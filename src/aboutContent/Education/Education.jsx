@@ -12,7 +12,7 @@ export default class Experience extends Component {
         "I am pursuing my Bachelor of Technology Degree in Computer Science and Engineering.",
       Roles: [
         {
-          role: "with 73.07% ^",
+          role: "with 76.38%",
         },
       ],
     },
