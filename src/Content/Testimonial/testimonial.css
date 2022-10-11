@@ -109,14 +109,16 @@
   margin-bottom: 10px;
 }
 
-.testimonial___card--contant___detail--icon a {
+.testimonial___card--contant___detail--icon a,
+.testimonial___card--contant___detail--icon button {
   color: var(--primary-color);
   font-size: 1.5rem;
   margin-right: 18px;
   transition: all 0.3s linear;
 }
 
-.testimonial___card--contant___detail--icon a:hover {
+.testimonial___card--contant___detail--icon a:hover,
+.testimonial___card--contant___detail--icon button:hover {
   color: var(--hoverColor1);
 }
 
