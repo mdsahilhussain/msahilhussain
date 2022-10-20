@@ -3,15 +3,21 @@ export const workingHistory = [
     delay: "100",
     duration: "Jan, 2022 -  Present",
     companeyName: "MindZenX, Bangalore",
-    jobTitle: "Front-End Developer (Inter)",
+    jobTitle: "Front-End Developer",
     aboutCompaney:
       "MindZenX provides mental health well-being platform for individuals & employees to deal with stress, depression, and any mental health issues.",
     Roles: [
       {
-        role: "Creating web as well as android user interface screen based on user expressions on Figma",
+        role: "Developed web and mobile user interfaces that increased user engagement by 85%.",
       },
       {
-        role: "Developing web application using React js, React Hooks, React-Router-DOM, and Integrate API.",
+        role: "Converted design into react components and managed state to increase website performance by 25%.",
+      },
+      {
+        role: "Worked on the integration of APIs and Video SDK.",
+      },
+      {
+        role: "I worked with Postman for testing APIs",
       },
     ],
   },
