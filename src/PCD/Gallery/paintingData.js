@@ -20,4 +20,10 @@ export const paintingData = [
   {
     imageURl: "1rtGc61ol3KGq6hL0-OACTHCsqPYsvHGo",
   },
+  {
+    imageURl: "12cigrIc09Q1tGNi2l91a5ZNOLXdKUAjV",
+  },
+  {
+    imageURl: "1gFprKQVqEgon_5LjI8qQcqjBxCo1nUbq",
+  },
 ];
