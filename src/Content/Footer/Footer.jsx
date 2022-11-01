@@ -32,15 +32,15 @@ export default class Footer extends Component {
                 </Link>
               </li>
               <li>
-                <Link target="_blank" rel="noreferrer" to={"https://msahilhussain.medium.com/"}>
+                <a target="_blank" rel="noreferrer" href="https://msahilhussain.medium.com/">
                   <p>Blogs</p>
-                </Link>
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <Link to={"*"}>
                   <p>FQA</p>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer___soicalLinks">
