@@ -16,8 +16,9 @@ export default function Contact() {
         "gmailFormclient",
         "template_tgjribb",
         e.target,
-        "hYaiCVw3gLaDTigGE"
+        "upVjybq3kHyL6DGPv"
       )
+      
       .then(
         (result) => {
           console.log(result.text);
