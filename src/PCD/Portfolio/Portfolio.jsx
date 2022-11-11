@@ -202,7 +202,7 @@ function Portfolio() {
                       <div>
                         <p>{item.data}</p>
                         <h4>{item.name}</h4>
-                        <p>hello</p>
+                        <p>{""}</p>
                       </div>
                       {item.url ? (
                         <a target="_blank" rel="noreferrer" href={item.url}>
