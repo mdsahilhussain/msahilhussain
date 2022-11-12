@@ -84,7 +84,7 @@ export default class Highlight extends Component {
               </div>
             </div>
             <div
-              className="highLight___detailSection--numberFiger___2"
+              className="highLight___detailSection--numberFiger___35"
               data-aos="fade-up"
               // data-aos-offset="200"
               data-aos-delay="100"

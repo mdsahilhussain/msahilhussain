@@ -21,9 +21,14 @@
 }
 
 .footer___importantLinks li {
+  color: var(--text-color);
+  opacity: 70%;
   margin-bottom: 18px;
 }
 
+.footer___importantLinks li:hover {
+  opacity: 100%;
+}
 .footer___importantLinks li:last-child {
   margin-bottom: 0px;
 }

@@ -195,10 +195,10 @@ section {
 
   .portfolio____gallery___heading--links button {
     font-size: 14px;
-  }
-  .portfolio____gallery___heading--links button {
     margin-right: 10px;
+    transition: all 3.s linear;
   }
+
 
   .portfolio____gallery--cardSection {
     grid-template-columns: repeat(2, 1fr);
