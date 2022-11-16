@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./testimonial.css";
 
 //*================================ testimonial data ================================
-import { peopleDetails } from "./peopleDetail";
+import  peopleDetails  from "./peopleDetail.json";
 
 export default class Testimonial extends Component {
   SampleNextArrow(props) {
@@ -34,7 +34,6 @@ export default class Testimonial extends Component {
     );
   }
   render() {
-    const cardDetail = peopleDetails;
     const settings = {
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -60,7 +59,7 @@ export default class Testimonial extends Component {
 
           <div className="testimonial___card">
             <Slider {...settings}>
-              {cardDetail.map((item, index) => {
+              {peopleDetails.map((item, index) => {
                 return (
                   <div className="testimonial___card--height" key={"index"}>
                     <div className="testimonial___card--contant">

@@ -1,6 +1,6 @@
-import { appData } from "./appData";
-import { webData } from "./webData";
-import { webDevData } from "./wedDevData";
+import  appData  from "./appData.json";
+import  webData  from "./webData.json";
+import  webDevData  from "./wedDevData.json";
 
 export const Data = [
   {

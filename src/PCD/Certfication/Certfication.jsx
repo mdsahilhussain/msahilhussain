@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 
-import { certficationData } from "./certficationData";
+import certficationData  from "./certficationData.json";
 import "./certfication.css";
 import { LoadingProvider } from "../../Context/LoadingContext";
 
 export default class Certfication extends Component {
   render() {
-    const data = certficationData;
-
     return (
       <div className="certification">
         <div className="certification___body sc2">
-          {data.map((item, index) => {
+          {certficationData.map((item, index) => {
             return (
               <div className="certification___body--content">
                 <div className="certification___body--image slide-in-bottom">

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { appData } from "./appData";
-import { webData } from "./webData";
-import { webDevData } from "./wedDevData";
-import { Data } from "./allWorksData";
+import  appData  from "./appData.json";
+import  webData  from "./webData.json";
+import  webDevData  from "./wedDevData.json";
+import  {Data}  from "./allWorksData";
 
 import { Link } from "react-router-dom";
 
@@ -148,7 +148,7 @@ function Portfolio() {
                         <p>{item.date}</p>
 
                         <h3>{item.name}</h3>
-                        <h5>hello</h5>
+                        {/* <h5>hello</h5> */}
                       </div>
                       {!item.set ? (
                         <Link

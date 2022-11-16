@@ -15,7 +15,7 @@ import workingMen from "../../Assets/working.png";
 import hireMe from "../../Assets/hiremeImg.svg";
 
 //*================================ experiences data ================================
-import { workingHistory } from "./workingHistory";
+import workingHistory  from "./workingHistory.json";
 export default class Experience extends Component {
   componentDidMount() {
     // /or simply just AOS.init();
@@ -27,7 +27,6 @@ export default class Experience extends Component {
     AOS.refresh();
   }
   render() {
-    const experienceDetail = workingHistory;
     return (
       <>
         <div className="experience">
@@ -65,7 +64,7 @@ export default class Experience extends Component {
               </Link>
             </div>
             <div className="experience___style___workingDetail">
-              {experienceDetail.map((item, index) => {
+              {workingHistory.map((item, index) => {
                 return (
                   <div
                     className="exerience___style__workingDetail--detail"

@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { photoData } from "./photoData";
-import { paintingData } from "./paintingData";
+import  photoData  from "./photoData.json";
+import  paintingData  from "./paintingData.json";
 
 import "./gallery.css";
 
