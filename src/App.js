@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import "./index.css";
-import Home from "./Components/Home";
-import About from "./Components/About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 import { Footer, Navbar, Contact } from "./Content";
 import { Certfication, Gallery, Portfolio } from "./PCD";
