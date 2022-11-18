@@ -6,6 +6,7 @@ import {
   Highlight,
   Project,
   Testimonial,
+  Platfrom
 } from "../Content";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <div>
       <Header />
       <Highlight />
+      {/* <Platfrom/> */}
       <Experience/>
       <Project />
       <Testimonial/>

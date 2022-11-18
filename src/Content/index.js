@@ -1,6 +1,7 @@
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as Header } from "./Header/Header";
 export { default as Highlight } from "./Highlight/Highlight";
+export { default as Platfrom } from "./Platfrom/Platfrom";
 export { default as Experience } from "./Experience/Experience";
 export { default as Project } from "./Project/Project";
 export { default as Testimonial } from "./Testimonial/Testimonial";

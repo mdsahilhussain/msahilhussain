@@ -1,0 +1,125 @@
+.platfrom___contaner {
+  margin-top: 24px;
+  padding: 1rem 8rem;
+}
+
+.platfrom___contaner ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.platfrom___contaner li {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--primary-color);
+  font-family: "Rubik", sans-serif;
+  transition: all 0.3s linear;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.platfrom___contaner li:last-child {
+  margin-right: 0px;
+}
+
+.platfrom___contaner li i {
+  margin-right: 10px;
+}
+
+.platfrom___contaner li:hover {
+  color: var(--hoverColor1);
+}
+.platfrom___contaner li:hover i {
+  transform: scale(1.5);
+}
+
+.platfrom___contaner li:active {
+  color: var(--hoverColor1);
+}
+
+.github {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github img {
+  height: 25vh;
+  width: auto;
+}
+
+.cp {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cp___card {
+  background-color: var(--cardColor);
+  height: fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.cp___card--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.cp___card--top___image {
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cp___card--top___detail {
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+}
+
+.cp___card--top___detail p{
+   margin-top: 5px;
+   margin-bottom: 16px;
+  }
+
+.cp___card--top___detail span{
+    margin-left: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cp___card--bottom ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.cp___card--bottom li {
+  padding: 0.5rem 5rem 0.5rem 1.5rem;
+  background-color: var(--hoverColor1);
+  border-radius: 10px;
+}
+
+.cp___card--bottom li h4 {
+  color: var(--text-color);
+  font-weight: 100;
+}
+.cp___card--bottom li span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.cp___card--bottom li p {
+  color: var(--bg-color);
+  font-weight: 500;
+  opacity: 100%;
+}
