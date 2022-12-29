@@ -14,18 +14,32 @@ export default class Navbar extends Component {
   mobileNavbarShow = () => {
     this.setState({ mobileNavbar: !this.state.mobileNavbar });
   };
+
+  mobileNavbarShowByLogo = () => {
+    this.setState({ mobileNavbar: false });
+  };
   render() {
     return (
       <nav>
         <div className="navbar___mobile">
           <div className="navbar___mobile___img">
             <NavLink to={"/"}>
-              <img src={Logo} alt="logoIMG" />
+              <img
+                src={Logo}
+                alt="logoIMG"
+                onClick={this.mobileNavbarShowByLogo}
+              />
             </NavLink>
             {this.state.mobileNavbar ? (
-              <i className="fa-solid fa-xmark" onClick={this.mobileNavbarShow}></i>
+              <i
+                className="fa-solid fa-xmark"
+                onClick={this.mobileNavbarShow}
+              ></i>
             ) : (
-              <i className="fa-solid fa-bars" onClick={this.mobileNavbarShow}></i>
+              <i
+                className="fa-solid fa-bars"
+                onClick={this.mobileNavbarShow}
+              ></i>
             )}
           </div>
           <div
