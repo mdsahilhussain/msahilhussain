@@ -127,6 +127,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .github img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .platfrom___contaner {
     padding: 1rem 1.5rem;
   }
@@ -137,10 +144,6 @@
   }
   .platfrom___contaner ul {
     margin-bottom: 0.8rem;
-  }
-  .github img {
-    height: auto;
-    width: 100%;
   }
 }
 
