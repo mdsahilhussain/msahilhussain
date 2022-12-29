@@ -22,6 +22,7 @@
 
 .platfrom___contaner li:last-child {
   margin-right: 0px;
+  cursor: no-drop;
 }
 
 .platfrom___contaner li i {
@@ -69,13 +70,14 @@
 
 .cp___card--top {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
 }
 
 .cp___card--top___image {
-  width: 30%;
+  width: 40%;
   height: auto;
   display: flex;
   align-items: center;
@@ -83,20 +85,20 @@
 }
 
 .cp___card--top___detail {
-  width: 70%;
+  width: 60%;
   height: fit-content;
   text-align: center;
 }
 
-.cp___card--top___detail p{
-   margin-top: 5px;
-   margin-bottom: 16px;
-  }
+.cp___card--top___detail p {
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
 
-.cp___card--top___detail span{
-    margin-left: 18px;
-    font-size: 2rem;
-    font-weight: 700;
+.cp___card--top___detail span {
+  margin-left: 18px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .cp___card--bottom ul {
@@ -105,7 +107,7 @@
 }
 
 .cp___card--bottom li {
-  padding: 0.5rem 5rem 0.5rem 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
   background-color: var(--hoverColor1);
   border-radius: 10px;
 }
@@ -122,4 +124,34 @@
   color: var(--bg-color);
   font-weight: 500;
   opacity: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .platfrom___contaner {
+    padding: 1rem 1.5rem;
+  }
+  .platfrom___contaner li {
+    font-size: 14px;
+    margin-right: 16px;
+    /* border-bottom: 1px solid var(--primary-color); */
+  }
+  .platfrom___contaner ul {
+    margin-bottom: 0.8rem;
+  }
+  .github img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .github {
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .github img {
+    height: 20vh;
+    width: auto;
+  }
 }

@@ -84,7 +84,6 @@
 }
 
 .highLight___detailSection--numberFiger h1:hover {
-  transform: scale(1.5);
   color: var(--hoverColor1);
 }
 

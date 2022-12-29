@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Github from "./Github";
 import CP from "./CP";
+import "./platfrom.css";
 
-import "./platfrom.css"
 function Platfrom() {
+  const [show, setShow] = useState("git");
+
+  const toggle = (name) => {
+    console.log(name);
+    setShow(name);
+  };
+
   return (
     <div className="platfrom___contaner">
       <ul>
-        <li>
-          <i className="fa-brands fa-github"></i>Github
+        <li onClick={(e) => toggle("git")}>
+          <i className="fa-brands fa-github"></i>
+          Github
         </li>
-        <li>
-          <i class="fa-solid fa-code"></i>Competitive Programming
+        <li onClick={(e) => toggle("cp")} className="tooltip">
+          <i className="fa-solid fa-code "></i>
+          Competitive Programming
+          <span className="tooltiptext">commming soon...</span>
         </li>
       </ul>
       <div>
-        {/* <Github/> */}
-        <CP/>
+        <Github />
+        {/* <CP/> */}
       </div>
+      {/* <div>{show === "git" ? <Github /> : <CP />}</div> */}
     </div>
   );
 }

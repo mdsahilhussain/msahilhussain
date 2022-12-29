@@ -195,6 +195,44 @@ a:hover {
   color: var(--primary-color);
 }
 
+/* ================== Tooltip style ====================== */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 0.5rem 0.8rem;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  var(--primary-color) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* ================== Animation style ====================== */
 .pulsate-fwd {
   -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;

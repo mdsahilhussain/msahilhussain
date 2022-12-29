@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import  appData  from "./appData.json";
-import  webData  from "./webData.json";
-import  webDevData  from "./wedDevData.json";
-import  {Data}  from "./allWorksData";
+import appData from "./appData.json";
+import webData from "./webData.json";
+import webDevData from "./wedDevData.json";
+import { Data } from "./allWorksData";
 
 import { Link } from "react-router-dom";
 
