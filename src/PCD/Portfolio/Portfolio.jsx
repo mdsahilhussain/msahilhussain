@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 import "./portfolio.css";
 
-import projectHeaderImage from "../../Assets/projectHerderimage.png";
+import projectHeaderImage from "../../Assets/projectHerderimage.svg";
 function Portfolio() {
   const [all, setAll] = useState("allProject");
   const [data, setData] = useState();
