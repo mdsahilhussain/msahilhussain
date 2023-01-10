@@ -1,23 +1,26 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 import {
   Experience,
   Header,
   Highlight,
-  Project,
   Testimonial,
-  Platfrom
+  Platfrom,
 } from "../Content";
+
+const Project = lazy(()=> import('../Content/Project/Project'));
 
 export default function Home() {
   return (
     <div>
       <Header />
       <Highlight />
-      <Platfrom/>
-      <Experience/>
+      <Platfrom />
+      <Experience />
+      <Suspense fallback={<p>loader....</p>}>
       <Project />
-      <Testimonial/>
+      </Suspense>
+      <Testimonial />
     </div>
   );
 }
