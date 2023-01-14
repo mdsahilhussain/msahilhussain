@@ -23,7 +23,7 @@ function App() {
           <Route path="/about/*" element={<About />} />
           <Route path="/certificate" element={<Certfication />} />
           <Route
-            path="/project"
+            path="/portfolio"
             element={
               <Suspense fallback={<>Loading...</>}>
                 <Portfolio />

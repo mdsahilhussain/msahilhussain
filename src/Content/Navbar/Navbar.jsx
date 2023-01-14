@@ -69,12 +69,12 @@ export default class Navbar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={"/project"}
+                  to={"/portfolio"}
                   state={{ params: "addVideo", subTitle: "activeForMobile" }}
                   className={({ isActive }) => (isActive ? "" : "")}
                   onClick={this.mobileNavbarShow}
                 >
-                  Project
+                  Portfolio
                 </NavLink>
               </li>
               <li>
@@ -111,10 +111,10 @@ export default class Navbar extends Component {
               Certificate
             </NavLink>
             <NavLink
-              to={"/project"}
+              to={"/portfolio"}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Project
+              Portfolio
             </NavLink>
             <NavLink to={"/contact"} className="button_borders">
               <button className="primary_button">Say hi..</button>
