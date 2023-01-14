@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import contactHeaderImage from "../../Assets/contactHeaderImage.svg";
+import contactHeaderImage from "../../Assets/contactHeaderImage.jpg";
 
 import "./contact.css";
 

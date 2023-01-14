@@ -47,11 +47,10 @@ export default class Header extends Component {
               data-aos-delay="200"
               data-aos-easing="linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-              pellentesque dui dui, phasellus vestibulum consequat odio sociis.
-              Ac vel sed viverra ornare placerat vitae egestas ut sit. Feugiat
-              metus vel pharetra facilisi posuere. Accumsan porttitor amet enim,
-              ut mauris.
+              Software Enginner [ 1 year experience as a Fontend Devloper ] | 500+
+              DSA problems | 8+ Web Dev Project [ HTML5/CSS3, Javascript,
+              ReactJS&Redux, Typescript ] | 15+ Mobile UI & 12+ Web UI [ Figma,
+              AdobeXD, Illustrator ]
             </p>
             <div className="header___title-btn">
               <a
@@ -76,7 +75,6 @@ export default class Header extends Component {
                 data-aos-easing="linear"
               >
                 <button className="primary_button">
-                  {" "}
                   <i className="fa-solid fa-user-plus"></i> Hire me
                 </button>
               </Link>
