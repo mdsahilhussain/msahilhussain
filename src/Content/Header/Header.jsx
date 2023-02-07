@@ -118,7 +118,7 @@ export default class Header extends Component {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://mdsahilhussain.github.io/gitprofile/"
+            href="https://github.com/mdsahilhussain"
             data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="600"

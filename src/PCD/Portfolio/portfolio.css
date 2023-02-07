@@ -114,7 +114,8 @@ section {
 }
 
 .portfolio____gallery--cardSection___card--detail {
-  display: none;
+  display: block;
+  /* ==== */
   height: 100%;
   background-color: var(--hoverColor1);
   border-radius: 15px;
@@ -128,15 +129,50 @@ section {
   .portfolio____gallery--cardSection___card--detail {
   display: block;
 }
+
+.portfolio____gallery--cardSection___card--detail___text--icon {
+  position: absolute;
+  width: 20vw;
+  top: -4rem;
+  right: 1rem;
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+.portfolio____gallery--cardSection___card--detail___text--icon > h5 {
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--text-color);
+  color: var(--bgColor);
+  border-radius: 25px;
+}
+
 .portfolio____gallery--cardSection___card--detail___text,
 .portfolio____gallery--cardSection___card--detail___textII {
   position: absolute;
-  bottom: 24px;
+  bottom: 18px;
   width: 100%;
   left: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+.portfolio____gallery--cardSection___card--detail___text--right {
+  width: 80%;
+}
+
+.portfolio____gallery--cardSection___card--detail___text--right p {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.portfolio____gallery--cardSection___card--detail___text--right > a {
+  position: static;
+  text-decoration: underline;
 }
 
 .portfolio____gallery--cardSection___card--detail___text a,
@@ -152,6 +188,11 @@ section {
   background: none;
   border: none;
   color: var(--text-color);
+}
+
+.portfolio____gallery--cardSection___card--detail___text--right > a {
+  position: static;
+  text-decoration: underline;
 }
 
 .portfolio____gallery--cardSection___card--detail___textII a,
@@ -196,9 +237,8 @@ section {
   .portfolio____gallery___heading--links button {
     font-size: 14px;
     margin-right: 10px;
-    transition: all 3.s linear;
+    transition: all 3s linear;
   }
-
 
   .portfolio____gallery--cardSection {
     grid-template-columns: repeat(2, 1fr);
@@ -211,13 +251,17 @@ section {
     height: 15vh;
   }
 
-  
   .portfolio____gallery--cardSection___cardII {
     height: 20vh;
   }
 
   .portfolio____gallery--cardSection___card--detail {
     border-radius: 8px;
+  }
+
+  .portfolio____gallery--cardSection___card--detail___text--right h5,
+  .portfolio____gallery--cardSection___card--detail___text--icon > h5 {
+    font-size: 0.9rem;
   }
 
   .portfolio____gallery--cardSection___card--detail___text,
@@ -287,8 +331,11 @@ section {
   .portfolio____gallery--cardSection___card--detail___textII h1 {
     font-size: 14px;
   }
-  .portfolio____gallery--cardSection___card--detail___textII h5 {
-    font-size: 11px;
+
+  .portfolio____gallery--cardSection___card--detail___text--right p {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
   }
 
   .portfolio____gallery--cardSection___card--detail___text p {

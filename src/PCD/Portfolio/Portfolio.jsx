@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import appData from "./appData.json";
 import webData from "./webData.json";
 import webDevData from "./wedDevData.json";
@@ -75,11 +75,7 @@ function Portfolio() {
         <div className="portfolio____gallery">
           <div className="portfolio____gallery___heading">
             <h4 className="portfolio____gallery___heading--line1">portfolio</h4>
-            <h1
-            // data-aos="fade-up"
-            // data-aos-offset="200"
-            // data-aos-delay="50"
-            >
+            <h1>
               Selected work <hr />
             </h1>
           </div>
@@ -146,7 +142,6 @@ function Portfolio() {
                     <div className="portfolio____gallery--cardSection___card--detail___textII">
                       <div>
                         <p>{item.date}</p>
-
                         <h3>{item.name}</h3>
                         {/* <h5>hello</h5> */}
                       </div>
@@ -199,10 +194,17 @@ function Portfolio() {
                 >
                   <div className="portfolio____gallery--cardSection___card--detail">
                     <div className="portfolio____gallery--cardSection___card--detail___text">
-                      <div>
-                        <p>{item.data}</p>
+                      <div className="portfolio____gallery--cardSection___card--detail___text--icon">
+                        {item.technologey.map((subItem, index) => {
+                          return <h5 key={index}>{subItem}</h5>;
+                        })}
+                      </div>
+                      <div className="portfolio____gallery--cardSection___card--detail___text--right">
                         <h4>{item.name}</h4>
-                        <p>{""}</p>
+                        <p>{item.data}</p>
+                        <a target="_blank" rel="noreferrer" href={item.repoUrl}>
+                          <h5>Github repo</h5>
+                        </a>
                       </div>
                       {item.url ? (
                         <a target="_blank" rel="noreferrer" href={item.url}>

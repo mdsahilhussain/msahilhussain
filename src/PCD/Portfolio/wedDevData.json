@@ -4,24 +4,20 @@
     "name": "Disney+ Clone",
     "date": "",
     "url": "https://disneyplus-clone-7798f.web.app/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "MindZenx",
     "date": "",
     "url": "https://www.mindzenx.com/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
-  },
-  {
-    "uid": "webDev",
-    "name": "Resume Builder",
-    "date": "",
-    "url": "",
-    "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
 
   {
@@ -29,63 +25,69 @@
     "name": "M Sahil Hussain",
     "date": "",
     "url": "https://msahilhussain.netlify.app/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
-  },
-  {
-    "uid": "webDev",
-    "name": "reels Clone",
-    "date": "",
-    "url": "",
-    "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "Movies App",
     "date": "",
     "url": "https://hollywoodmoviesapp.netlify.app/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "Static Web Page",
     "date": "",
     "url": "https://gamestaticpage.netlify.app/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "Todo List",
     "date": "",
     "url": "https://listofappointments.netlify.app/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "Harshoots",
     "date": "",
     "url": "https://harshoots.github.io/index.html",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
-    "name": "Typing Game webDev",
+    "name": "Typing Game",
     "date": "",
     "url": "https://mdsahilhussain.github.io/typing.game/",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   },
   {
     "uid": "webDev",
     "name": "Old Portfolio",
     "date": "",
     "url": "",
+    "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": ""
+    "descr": "",
+    "technologey": []
   }
 ]
