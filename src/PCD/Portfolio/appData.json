@@ -1,9 +1,9 @@
- [
+[
   {
     "uid": "app",
     "name": "MindZenx",
     "date": "",
-    "url": "",
+    "url": "https://play.google.com/store/apps/details?id=com.mindzenx.app&pli=1",
     "bgImgURL": "1iwdcIovbviiaydPc0Hyf57h8ltlBiSoa",
     "descr": ""
   },
@@ -47,7 +47,7 @@
     "bgImgURL": "1ES1hjP0v_MGKQ4OFwPFr85ivWQ7C6Tsy",
     "descr": ""
   },
-  { 
+  {
     "uid": "app",
     "name": "Chilling",
     "date": "",

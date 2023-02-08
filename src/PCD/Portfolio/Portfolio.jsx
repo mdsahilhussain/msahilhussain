@@ -193,18 +193,24 @@ function Portfolio() {
                   }}
                 >
                   <div className="portfolio____gallery--cardSection___card--detail">
+                    <div className="portfolio____gallery--cardSection___card--detail--icon">
+                      {item?.technologey?.map((subItem, index) => {
+                        return <h5 key={index}>{subItem}</h5>;
+                      })}
+                    </div>
                     <div className="portfolio____gallery--cardSection___card--detail___text">
-                      <div className="portfolio____gallery--cardSection___card--detail___text--icon">
-                        {item.technologey.map((subItem, index) => {
-                          return <h5 key={index}>{subItem}</h5>;
-                        })}
-                      </div>
                       <div className="portfolio____gallery--cardSection___card--detail___text--right">
                         <h4>{item.name}</h4>
-                        <p>{item.data}</p>
-                        <a target="_blank" rel="noreferrer" href={item.repoUrl}>
-                          <h5>Github repo</h5>
-                        </a>
+                        <p>{item.descr}</p>
+                        {item.repoUrl ? (
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={item.repoUrl}
+                          >
+                            <h5>Github repo</h5>
+                          </a>
+                        ) : undefined}
                       </div>
                       {item.url ? (
                         <a target="_blank" rel="noreferrer" href={item.url}>

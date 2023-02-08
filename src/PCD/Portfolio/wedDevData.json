@@ -1,23 +1,53 @@
 [
   {
     "uid": "webDev",
+    "name": "career user",
+    "date": "",
+    "url": "https://usersaccount.netlify.app/",
+    "repoUrl": "https://github.com/mdsahilhussain/career_user_app",
+    "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
+    "descr": "This user dashboard of project content, help the user to connect with friends, upload photos, and create lists of things to do daily to increase the lifestyle of the user.",
+    "technologey": [
+      "javascript",
+      "css3",
+      "reactjs",
+      "redux-toolkit",
+      "redux-thunk",
+      "react-router-dom "
+    ]
+  },
+  {
+    "uid": "webDev",
     "name": "Disney+ Clone",
     "date": "",
     "url": "https://disneyplus-clone-7798f.web.app/",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/mdsahilhussain/disney-plus-clone",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "",
-    "technologey": []
+    "descr": "Made a Disney+ Clone, A movie streaming platform",
+    "technologey": [
+      "javascript",
+      "reactjs",
+      "redux",
+      "react-router-dom",
+      "styled-components",
+      "firebase"
+    ]
   },
   {
     "uid": "webDev",
     "name": "MindZenx",
     "date": "",
     "url": "https://www.mindzenx.com/",
-    "repoUrl": "",
+    "repoUrl": "https://gitlab.com/m7161/web",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "",
-    "technologey": []
+    "descr": "MindZenX Provides Mental Health Well-Being Platform For Individuals & Employees To Deal With Stress, Depression, And Any Mental Health Issues.",
+    "technologey": [
+      "javascript",
+      "reactjs",
+      "CSS3",
+      "react-router-dom",
+      "react-carousel"
+    ]
   },
 
   {
@@ -25,10 +55,10 @@
     "name": "M Sahil Hussain",
     "date": "",
     "url": "https://msahilhussain.netlify.app/",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/mdsahilhussain/msahilhussain",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "",
-    "technologey": []
+    "descr": "A personal website for describing myself, my skills, and my works",
+    "technologey": ["react", "javascript", "react-router-dom", "CSS3", "AOS"]
   },
   {
     "uid": "webDev",
@@ -45,10 +75,10 @@
     "name": "Static Web Page",
     "date": "",
     "url": "https://gamestaticpage.netlify.app/",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/mdsahilhussain/satic-web-page",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
     "descr": "",
-    "technologey": []
+    "technologey": ["CSS3", "javascript", "reactjs"]
   },
   {
     "uid": "webDev",
@@ -58,36 +88,36 @@
     "repoUrl": "",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
     "descr": "",
-    "technologey": []
+    "technologey": ["javascript", "reactjs", "CSS3"]
   },
   {
     "uid": "webDev",
     "name": "Harshoots",
     "date": "",
     "url": "https://harshoots.github.io/index.html",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/mdsahilhussain/harshoots.github.io",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
     "descr": "",
-    "technologey": []
+    "technologey": ["HTML", "CSS3", "javascript", "AOS"]
   },
   {
     "uid": "webDev",
     "name": "Typing Game",
     "date": "",
     "url": "https://mdsahilhussain.github.io/typing.game/",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/mdsahilhussain/typing.game",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "",
-    "technologey": []
+    "descr": "A website that enhances typing skills and typing -speed.",
+    "technologey": ["HTML", "CSS3", "javascript"]
   },
   {
     "uid": "webDev",
     "name": "Old Portfolio",
     "date": "",
-    "url": "",
-    "repoUrl": "",
+    "url": "https://mdsahilhussain.github.io/index.html",
+    "repoUrl": "https://github.com/mdsahilhussain/mdsahilhussain.github.io",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "",
-    "technologey": []
+    "descr": "A personal website for describing myself, my skills, and my works",
+    "technologey": ["HTML", "CSS3", "javascript", "AOS", "Slick-Slider"]
   }
 ]
