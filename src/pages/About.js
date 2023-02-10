@@ -56,7 +56,7 @@ function About() {
           >
             Skills
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"qualification"}
             onClick={() =>
               setSubtitle("qualification", setPerams("removeVideo"))
@@ -64,7 +64,7 @@ function About() {
             className={({ isActive }) => (isActive ? "aboutactive" : "")}
           >
             Qualification
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
       {perams === "addVideo" ? (
@@ -126,7 +126,7 @@ function About() {
             <Routes>
               <Route path={"introdution"} element={<Introdution />} />
               <Route path={"skills"} element={<Skills />} />
-              <Route path={"qualification"} element={<Education />} />
+              {/* <Route path={"qualification"} element={<Education />} /> */}
             </Routes>
           </div>
         </div>
