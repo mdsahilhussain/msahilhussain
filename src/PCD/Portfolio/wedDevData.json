@@ -1,6 +1,23 @@
 [
   {
     "uid": "webDev",
+    "name": "Dall-E 2.0",
+    "date": "",
+    "url": "https://dalle-msahilhussain.netlify.app/",
+    "repoUrl": "https://github.com/mdsahilhussain/dalle_clone-msahilhussain",
+    "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
+    "descr": "Clone web app uses OpenAI's image generator for unique and imaginative image creation.",
+    "technologey": [
+      "javascript",
+      "reactjs",
+      "mongodb",
+      "tailwind-css",
+      "open-ai",
+      "cloudinary"
+    ]
+  },
+  {
+    "uid": "webDev",
     "name": "career user",
     "date": "",
     "url": "https://usersaccount.netlify.app/",
@@ -40,7 +57,7 @@
     "url": "https://www.mindzenx.com/",
     "repoUrl": "https://gitlab.com/m7161/web",
     "bgImgURL": "15Be4L-7Gtqwypo4MwEMF8uKsrB7XH6vX",
-    "descr": "MindZenX Provides Mental Health Well-Being Platform For Individuals & Employees To Deal With Stress, Depression, And Any Mental Health Issues.",
+    "descr": "MindZenX offers mental health platform for individuals and employees to address stress and depression.",
     "technologey": [
       "javascript",
       "reactjs",
@@ -49,7 +66,6 @@
       "react-carousel"
     ]
   },
-
   {
     "uid": "webDev",
     "name": "M Sahil Hussain",
