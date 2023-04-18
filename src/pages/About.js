@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 
-import { Education, Introdution, Skills } from "../aboutContent";
+import { Introdution, Skills } from "../aboutContent";
 
 import circleShapOne from "../Assets/circleShapOne.png";
 import circleShapTwo from "../Assets/circleShapTwo.png";
