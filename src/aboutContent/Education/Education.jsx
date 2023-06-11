@@ -1,74 +1,68 @@
-import React, { Component } from "react";
-
+import React from "react";
 import "./education.css";
 
-export default class Experience extends Component {
-  educationHistory = [
+const Education = () => {
+  const educationHistory = [
     {
-      duration: "may, 2018 -  Present",
-      companeyName: "Darbhanga College of Engineering, Darbhanga",
+      duration: "may, 2018 - Present",
+      companyName: "Darbhanga College of Engineering, Darbhanga",
       jobTitle: "graduation",
-      aboutCompaney:
+      aboutCompany:
         "I am pursuing my Bachelor of Technology Degree in Computer Science and Engineering.",
-      Roles: [
+      roles: [
         {
           role: "with 76.38%",
         },
       ],
     },
     {
-      duration: "may, 2016 -  march, 2018",
-      companeyName: "scottish public school, katihar",
+      duration: "may, 2016 - march, 2018",
+      companyName: "Scottish Public School, Katihar",
       jobTitle: "intermediate",
-      aboutCompaney:
+      aboutCompany:
         "I have done my intermediate in physics, maths, and chemistry stream.",
-      Roles: [
+      roles: [
         {
           role: "with 50%",
         },
       ],
     },
     {
-      duration: "march, 2006 -  march, 2016",
-      companeyName: "Ramakrishna Mission Vidyamandir, Katihar",
-      jobTitle: "matriculation in genral study",
-      aboutCompaney:
+      duration: "march, 2006 - march, 2016",
+      companyName: "Ramakrishna Mission Vidyamandir, Katihar",
+      jobTitle: "matriculation in general study",
+      aboutCompany:
         "I have done my matriculation in the general study stream.",
-      Roles: [
+      roles: [
         {
-          role: " with 74.1%",
+          role: "with 74.1%",
         },
       ],
     },
   ];
-  render() {
-    return (
-      <div className="education">
-        <div className="education___style___workingDetail">
-          {this.educationHistory.map((item, index) => {
-            return (
-              <div
-                className="education___style__workingDetail--detail"
-                key={index}
-              >
-                <p>{item.duration}</p>
-                <span className="education___style__workingDetail--detail___icon">
-                  <i class="fa-solid fa-school-flag"></i>
-                </span>
-                <h4>{item.companeyName}</h4>
-                <h3>{item.jobTitle}</h3>
 
-                <p>{item.aboutCompaney}</p>
-                <ul>
-                  {item.Roles.map((subitem, index) => {
-                    return <li key={index}>{subitem.role}</li>;
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+  return (
+    <div className="education">
+      <div className="education___style___workingDetail">
+        {educationHistory.map((item, index) => (
+          <div className="education___style__workingDetail--detail" key={index}>
+            <p>{item.duration}</p>
+            <span className="education___style__workingDetail--detail___icon">
+              <i className="fa-solid fa-school-flag"></i>
+            </span>
+            <h4>{item.companyName}</h4>
+            <h3>{item.jobTitle}</h3>
+            <p>{item.aboutCompany}</p>
+            <ul>
+              {item.roles.map((subitem, subIndex) => (
+                <li key={subIndex}>{subitem.role}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Education;

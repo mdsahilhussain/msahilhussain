@@ -1,52 +1,58 @@
 [
   {
     "delay": "100",
-    "duration": "Jan, 2022 -  Present",
-    "companeyName": "MindZenX, Bangalore",
-    "jobTitle": "Front-End Developer",
-    "aboutCompaney": "MindZenX provides mental health well-being platform for individuals & employees to deal with stress, depression, and any mental health issues.",
+    "duration": "May, 2023 -  Present",
+    "companyName": "SpecScale, Surat",
+    "jobTitle": "Senior React Developer -",
+    "aboutCompany": "MindZenX provides mental health well-being platform for individuals & employees to deal with stress, depression, and any mental health issues.",
     "Roles": [
       {
-        "role": "I developed web and mobile interfaces that significantly boosted user engagement by 85%. "
+        "role": "Led the front-end development team, providing <strong>technical guidance</strong> and <strong>mentoring junior developers.</strong>"
       },
       {
-        "role": "I transformed the design into React components and effectively managed state to improve website performance by 25%."
+        "role": "Resolved complex technical issues and bugs, conducting thorough debugging and troubleshooting."
       },
       {
-        "role": "I also worked on integrating APIs and video SDKs."
+        "role": "<strong>Optimized performance</strong> through code refactoring, performance profiling, and <strong>implementing efficient algorithms.</strong>"
       },
       {
-        "role": "utilized Postman for testing the APIs"
+        "role": "I have experience in integrating RESTful APIs and external services into React applications, utilizing <strong>TypeScript, ReactJS, Redux,</strong> and <strong>ChartJS</strong>. Additionally, I have expertise in integrating third-party React libraries."
       }
     ]
   },
   {
     "delay": "200",
-    "duration": "Aug, 2021 -  Sept, 2021",
-    "companeyName": "Let'sGrowMore, Prayagraj, Uttar Pradesh",
-    "jobTitle": "WebDeveloper (Inter)",
-    "aboutCompaney": "LetsGrowMore is a E-Learning organisation that aims at building the future through nourishing the present",
+    "duration": "Jan, 2022 -  Dec, 2022",
+    "companyName": "MindZenX, Bangalore",
+    "jobTitle": "Front-End Developer",
+    "aboutCompany": "MindZenX provides mental health well-being platform for individuals & employees to deal with stress, depression, and any mental health issues.",
     "Roles": [
       {
-        "role": "Creating a single-page website using HTML, CSS, JavaScript."
+        "role": "I developed web and mobile interfaces that significantly boosted user <strong>engagement by 85%</strong>."
       },
       {
-        "role": "Creating a simple web application that gets user data using API, React js."
+        "role": "I transformed the design into effectively <strong>React components</strong> and <strong> managed state globally</strong> to improve website <strong>performance by 25%</strong>."
+      },
+      {
+        "role": "I also worked on <strong>integrating APIs</strong> and <strong>video SDKs</strong>."
+      },
+      {
+        "role": "utilized Postman for <strong>testing the APIs</strong>."
       }
     ]
   },
   {
     "delay": "300",
-    "duration": "Aug, 2022 -  Sept, 2021",
-    "companeyName": "Madhubani Paints, Darbhanga",
-    "jobTitle": "Graphic Designer",
-    "aboutCompaney": "Madhubanipaints is a Bihar based ethnic label brand, run by National Award Winner Smt. Asha Jha. This label is run solely by a group of 100-150 women. Shipping worldwide.",
+    "duration": "Aug, 2021 -  Sept, 2021",
+    "companyName": "Let'sGrowMore, Prayagraj, Uttar Pradesh",
+    "jobTitle": "WebDeveloper (Inter)",
+    "aboutCompany": "LetsGrowMore is a E-Learning organization that aims at building the future through nourishing the present",
     "Roles": [
       {
-        "role": "Created 20+ Posters, Banners, Standee for social promotion. "
+        "role": "Creating a single-page website using <strong><strong></strong></strong>."
       },
       {
-        "role": "Created 6+ Madhubani Painting Posters."
+        "role": "Creating a simple web application that <strong>gets user data using API, React js</strong>."
       }
     ]
   }
