@@ -23,6 +23,7 @@ const Experience = () => {
     );
     return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
   };
+  
   return (
     <>
       <div className="experience">

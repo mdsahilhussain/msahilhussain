@@ -297,8 +297,8 @@ section {
     margin-top: 18px;
     width: 100%;
   }
-
-  .portfolio____gallery {
+  portfolio____gallery--cardSection___card--detail___text--right
+    .portfolio____gallery {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -327,23 +327,23 @@ section {
     height: 10vh;
   }
 
-  .portfolio____gallery--cardSection___card--detail___text h4 {
-    font-size: 13px;
+  .portfolio____gallery--cardSection___card--detail___text--right h4 {
+    font-size: 0.8rem;
   }
 
   .portfolio____gallery--cardSection___card--detail___textII h1 {
     font-size: 14px;
   }
 
-  .portfolio____gallery--cardSection___card--detail___text--right p {
-    font-size: 0.9rem;
-    margin-top: 0.6rem;
-    margin-bottom: 0.4rem;
+  .portfolio____gallery--cardSection___card--detail___text--right h5 {
+    font-size: 0.5rem;
   }
 
-  .portfolio____gallery--cardSection___card--detail___text p {
-    font-size: 10px;
+
+  .portfolio____gallery--cardSection___card--detail___text--right p {
+    display: none;
   }
+
   .portfolio____gallery--cardSection___card--detail___text a,
   .portfolio____gallery--cardSection___card--detail___textII a,
   .portfolio____gallery--cardSection___card--detail___textII button {

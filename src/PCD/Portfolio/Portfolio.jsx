@@ -202,15 +202,18 @@ function Portfolio() {
                       <div className="portfolio____gallery--cardSection___card--detail___text--right">
                         <h4>{item.name}</h4>
                         <p>{item.descr}</p>
-                        {item.repoUrl ? (
-                          <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href={item.repoUrl}
-                          >
-                            <h5>Github repo</h5>
-                          </a>
-                        ) : undefined}
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href={item.repoUrl}
+                          style={
+                            item.repoUrl
+                              ? { display: "block" }
+                              : { display: "none" }
+                          }
+                        >
+                          <h5>Github repo</h5>
+                        </a>
                       </div>
                       {item.url ? (
                         <a target="_blank" rel="noreferrer" href={item.url}>
